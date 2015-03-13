@@ -3,11 +3,11 @@
 
 @font-face {
   font-family: 'Sukhumvit';
-  src: url('#{$fa-font-path}/SukhumvitSet-Text.eot?v=#{$fa-version}');
-  src: url('#{$fa-font-path}/SukhumvitSet-Text.eot?#iefix&v=#{$fa-version}') format('embedded-opentype'),
-    url('#{$fa-font-path}/SukhumvitSet-Text.woff?v=#{$fa-version}') format('woff'),
-    url('#{$fa-font-path}/SukhumvitSet-Text.ttf?v=#{$fa-version}') format('truetype'),
-    url('#{$fa-font-path}/SukhumvitSet-Text.svg?v=#{$fa-version}#sukhumvitregular') format('svg');
+  src: url('#{$fa-font-path}/SukhumvitSet-Medium.eot?v=#{$fa-version}');
+  src: url('#{$fa-font-path}/SukhumvitSet-Medium.eot?#iefix&v=#{$fa-version}') format('embedded-opentype'),
+    url('#{$fa-font-path}/SukhumvitSet-Medium.woff?v=#{$fa-version}') format('woff'),
+    url('#{$fa-font-path}/SukhumvitSet-Medium.ttf?v=#{$fa-version}') format('truetype'),
+    url('#{$fa-font-path}/SukhumvitSet-Medium.svg?v=#{$fa-version}#sukhumvitregular') format('svg');
   //src: url('#{$fa-font-path}/FontAwesome.otf') format('opentype'); // used when developing fonts
   font-weight: normal;
   font-style: normal;

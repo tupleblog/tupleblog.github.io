@@ -1,34 +1,16 @@
 ---
 layout: page
-title: About the Jekyll Theme
+title: About Tuple
 image:
-  feature: abstract-5.jpg
-  credit: dargadgetz
-  creditlink: http://www.dargadgetz.com/ios-7-abstract-wallpaper-pack-for-iphone-5-and-ipod-touch-retina/
+  feature: chicago_blur.jpg
+  credit: titipat
+  creditlink: http://titipata.github.io
 comments: false
-modified: 2014-12-24
+modified: 2015-3-13
 ---
 
-They say three times the charm, so here is another free responsive Jekyll blog theme for you. I've learned a ton since open sourcing my first two themes [on Github](http://github.com/mmistakes), and wanted to try a few new things this time around. 
+## About Tuple
 
-If you've used any of [my other themes](http://mademistakes.com/work/jekyll-themes/) most of this should be familiar territory...
+Tuple was created by two friends who met in Thailand including Tul and My. Tul obtained his biology degree from Kasetsart University, Thailand. He is now pursuing his master degree at Mahidol University. My obtained his BEng in Electrical Engineering from Chulalongkorn University, Thailand. He is now pursuing his master degree in Biomedical Engineering at Northwestern University. See more in his [personal website](http://titipata.github.io). Both share similar interest in many stuffs. They finally decided to create a blog that can be a place to share their interest to others. As a result, Tuple is created to spread their words through the blog including technology, programming, nature and a little bit of traveling. Tuple is welcome for few more people who who want to join and the blog.
 
-## What HPSTR brings to the table:
-
-* Responsive templates for post, page, and post index `_layouts`. Looks great on mobile, tablet, and desktop devices.
-* Gracefully degrads in older browsers. Compatible with Internet Explorer 8+ and all modern browsers.  
-* Modern and minimal design.
-* Sweet animated menu.
-* Background image support.
-* Readable typography to make your words shine.
-* Support for large images to call out your favorite posts.
-* Built-in support for Sass courtesy of Jekyll 2.x.
-* Optional [Disqus](http://disqus.com) comments.
-* Simple and clear permalink structure[^1].
-* [Open Graph](https://developers.facebook.com/docs/opengraph/) and [Twitter Cards](https://dev.twitter.com/docs/cards) support for a better social sharing experience.
-* Simple [custom 404 page]({{ site.url }}/404.html) to get you started.
-* Stylesheets for Pygments and Coderay [syntax highlighting]({{ site.url }}/code-highlighting-post/) to make your code examples look snazzy.
-
-<div markdown="0"><a href="{{ site.url }}/theme-setup/" class="btn btn-info">Theme Setup</a> <a href="https://github.com/mmistakes/hpstr-jekyll-theme" class="btn btn-success">Download HPSTR</a></div>
-
-[^1]: Example: *domain.com/category-name/post-title*
+We use HPSTR Jekyll theme made by [Michael Rose](https://github.com/mmistakes) ([@mmistakes](https://twitter.com/mmistakes/)).
