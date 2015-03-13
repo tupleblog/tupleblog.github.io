@@ -1,0 +1,14 @@
+/* FONT PATH
+ * -------------------------- */
+
+@font-face {
+  font-family: 'Quark-Light';
+  src: url('#{$fa-font-path}/Quark-Light.eot?v=#{$fa-version}');
+  src: url('#{$fa-font-path}/Quark-Light.eot?#iefix&v=#{$fa-version}') format('embedded-opentype'),
+    url('#{$fa-font-path}/Quark-Light.woff?v=#{$fa-version}') format('woff'),
+    url('#{$fa-font-path}/Quark-Light.ttf?v=#{$fa-version}') format('truetype'),
+    url('#{$fa-font-path}/Quark-Light.svg?v=#{$fa-version}#quarkbold') format('svg');
+  //src: url('#{$fa-font-path}/FontAwesome.otf') format('opentype'); // used when developing fonts
+  font-weight: normal;
+  font-style: normal;
+}
