@@ -14,4 +14,4 @@ Hi all! Me ([@titipat_a](https://twitter.com/titipat_a)) and [@t_bluenex](http:/
 
 ### Why named Tuple?
 
-We use `Python` for coding. Tuple is one type of data that python provide and we think this is a pretty good name so we chose this name for our blog.
+We use `Python` for coding. Tuple is one type of data that python provides and we think this is a pretty good name so we chose this name for our blog.

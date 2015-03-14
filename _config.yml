@@ -1,5 +1,5 @@
-title:            ทูเปิลบล็อก
-description:      Describe your website here.
+title:            Tuple Blog
+description:      บล็อกภาษาไทยที่อยากเขียนอะไรก็เขียน
 disqus_shortname: tupleblog
 reading_time:     true
 words_per_minute: 200
@@ -9,8 +9,8 @@ url:
 
 # Owner/author information
 owner:
-  name:           ทูเปิลบล็อก
-  avatar:         avatar.jpg
+  name:           TUPLEBLOG
+  avatar:         tpbloglogo.png
   bio:            "บล็อกภาษาไทยที่อยากเขียนอะไรก็เขียน"
   email:          tupleblog@outlook.com
   # Social networking links used in footer. Update and remove as you like.

@@ -5,7 +5,7 @@ image:
   feature: chicago_blur.jpg
   credit: titipat
   creditlink: http://titipata.github.io
-comments: false
+comments: true
 modified: 2015-3-13
 ---
 
