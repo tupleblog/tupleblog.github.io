@@ -103,9 +103,9 @@ body {
 }
 .entry-image {
 	position: relative;
-	top: -50%; 
-	left: -50%; 
-	width: 200%; 
+	top: -50%;
+	left: -50%;
+	width: 200%;
 	height: 200%;
 	min-height: 400px;
 	overflow: hidden;
@@ -119,12 +119,12 @@ body {
 		background-color: rgba($base-color,0.3);
 	}
 	img {
-		position: absolute; 
-		top: 0; 
-		left: 0; 
-		right: 0; 
-		bottom: 0; 
-		margin: auto; 
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		margin: auto;
 		min-width: 50%;
 		min-height: 400px; // match .entry-image min-height
 	}
@@ -210,13 +210,18 @@ header .entry-meta {
 			margin-right: 10px;
 			padding: 20px 30px;
 		}
+
 		@media #{$large} {
-			max-width: 800px;
+			max-width: 950px;
 			margin: 50px auto 30px auto;
 			padding: 50px 80px;
 			> p:first-child {
 				@include font-size(20);
 			}
+		}
+
+		.post-content {
+			max-width: 540px;
 		}
 	}
 	#disqus_thread {
@@ -314,7 +319,7 @@ header .entry-meta {
 	h3 {
 		margin: 0;
 		@include font-rem(28);
-		a { 
+		a {
 			color: $text-color;
 		}
 		@media #{$medium} {
@@ -328,11 +333,11 @@ header .entry-meta {
 .list-item {
 	width: 100%;
 	text-align: left;
-	h4 { 
+	h4 {
 		@include font-rem(18);
-		margin-bottom: 0; 
+		margin-bottom: 0;
 	}
-	span { 
+	span {
 		display: block;
 		@include font-rem(14);
 		color: lighten($base-color,50);
@@ -346,7 +351,7 @@ header .entry-meta {
 	}
 }
 
-// Post Index 
+// Post Index
 // --------------------------------------------------
 #post-index {
 	#main {
@@ -415,7 +420,7 @@ header .entry-meta {
 // --------------------------------------------------
 .socialcount {
 	@include font-rem(16);
-	li { 
+	li {
 		padding-left: 10px;
 		padding-right: 10px;
 	}
@@ -461,4 +466,41 @@ header .entry-meta {
 }
 #goog-wm-sb {
 	@extend .btn;
+}
+
+// author
+// --------------------------------------------------
+.author-side {
+	width: 150px;
+	display: none;
+
+	@media #{$large} {
+		display: block;
+	}
+}
+.author-side h3,p {
+	text-align: center;
+}
+
+.author-side .bio-photo {
+	width: 150px;
+	@include rounded(150px);
+}
+
+.author-social {
+	display: block;
+  margin: 5px;
+
+  &:visited {
+    color: $black;
+  }
+  &:hover {
+    @include scale(1.1);
+  }
+  &:active {
+    @include translate(0, 2px);
+  }
+  .fa {
+		margin-right: 5px;
+	}
 }
