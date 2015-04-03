@@ -212,7 +212,8 @@ header .entry-meta {
 		}
 
 		@media #{$large} {
-			max-width: 950px;
+			position: relative;
+			max-width: 800px;
 			margin: 50px auto 30px auto;
 			padding: 50px 80px;
 			> p:first-child {
@@ -473,12 +474,15 @@ header .entry-meta {
 .author-side {
 	width: 150px;
 	display: none;
+	position: absolute;
+	left:-175px;
+	top:25px;
 
-	@media #{$large} {
-		display: block;
+	@media #{$limitforauthor} {
+		display:block;
 	}
 }
-.author-side h3,p {
+.author-side h3 {
 	text-align: center;
 }
 
@@ -486,8 +490,12 @@ header .entry-meta {
 	width: 150px;
 	@include rounded(150px);
 }
+.author-bio {
+	text-align: center;
+}
 
 .author-social {
+	text-align: center;
 	display: block;
   margin: 5px;
 
@@ -503,4 +511,8 @@ header .entry-meta {
   .fa {
 		margin-right: 5px;
 	}
+}
+
+.entry-tags-posts {
+	@include font-size(18);
 }

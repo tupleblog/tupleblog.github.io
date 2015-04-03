@@ -2,19 +2,21 @@
 
 Titipata:
   name: TITIPATA
-  web: http://thewhip.com
-  email: billy@rick.com
-  bio: "What do you want, jewels? I am a very extravagant man."
-  avatar: bio-photo-2.jpg
-  twitter: extravagantman
+  web: http://titipata.github.io/
+  email: titipat.a@u.northwestern.edu
+  bio: "Hello there!"
+  avatar: myavatar.png
+  twitter: titipat_a
   google:
-    plus: BillyRick
+    plus: TitipatAchakulwisut
+  github: https://github.com/titipata
 
-cornelius_fiddlebone:
-  name: Cornelius Fiddlebone
-  email: cornelius@thewhip.com
-  bio: "I ordered what?"
-  avatar: bio-photo.jpg
-  twitter: rhymeswithsackit
+Bluenex:
+  name: BLUENEX
+  email: tulakan.r@gmail.com
+  bio: "There is always a way."
+  avatar: tulavatar.jpg
+  twitter: t_bluenex
   google:
-    plus: CorneliusFiddlebone
+    plus: tulakanRuangrong
+  github: https://github.com/bluenex
