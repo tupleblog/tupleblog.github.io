@@ -18,7 +18,7 @@ comments: true
 ### 3 Reasons Why Nuclear Energy Is Awesome!
 <iframe width="560" height="315" src="//www.youtube.com/embed/pVbLlnmxIbY" frameborder="0"> </iframe>
 
-### 3 Reasons Why Nuclear Energy Is Awesome!
+### 3 Reasons Why Nuclear Energy Is Terrible!
 <iframe width="560" height="315" src="//www.youtube.com/embed/HEYbgyL5n1g" frameborder="0"> </iframe>
 
 ถ้าได้ดูจนจบจะเห็นว่าวิดิโอจาก [Kurz Gesagt](https://www.youtube.com/channel/UCsXVk37bltHxD1rDPwtNM8Q) ได้นำเสนอออกมาทั้งในแง่มุมของฝ่ายสนับสนุนและฝ่ายต่อต้านพลังงานจากนิวเคลียร์ และให้เราๆ ผู้ที่ได้ดูวิดิโอเหล่านี้ตัดสินเองว่า โลกเราควรจะยังใช้พลังงานนิวเคลียร์หรือไม่เพราะอะไร แล้วคุณล่ะคิดอย่างไรกับพลังงานนิวเคลียร์ เมื่อได้ดูวิดิโอทั้งหมดแล้ว?

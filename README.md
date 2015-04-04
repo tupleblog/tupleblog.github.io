@@ -13,7 +13,7 @@ Repository for [tuple blog](http://tupleblog.github.io) (in Thai) based on [Jeky
 
 - All posts on the website are all located in `_posts` folder where the post name format is `yyyy-mm-dd-post-name.md` (`.md` stands for markdown). Jekyll uses [markdown](https://guides.github.com/features/mastering-markdown/) format for the post which can be easily written. We can provide header of each post (markdown file) as
 
-```
+```markdown
 ---
 layout: post
 title: "Post Title"
