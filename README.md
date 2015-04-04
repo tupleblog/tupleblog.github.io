@@ -1,33 +1,32 @@
 # Tuple Blog
 
-Repository for [tuple blog](http://tupleblog.github.io) based on [Jekyll](http://jekyllrb.com/) [HPSTR](https://github.com/mmistakes/hpstr-jekyll-theme) theme.
+Repository for [tuple blog](http://tupleblog.github.io) (in Thai) based on [Jekyll](http://jekyllrb.com/) [HPSTR](https://github.com/mmistakes/hpstr-jekyll-theme) theme.
 
-## Members
-- [My](http://titipata.github.io)
-- [Tul](https://github.com/bluenex)
+### Want to write blogs with us?
 
-<!--- # HPSTR Jekyll Theme
+- If you want to be a member on Github repository, ask Titipat or Tulakan. We can add you to the repository
+- Alternative is to create pull request by fork this repository
 
-They say three times the charm, so here is another free responsive Jekyll theme for you. I've learned a ton since open sourcing [my first two themes](https://mademistakes.com/work/jekyll-themes/), and wanted to try a few new things this time around. If you've used my previous themes most of this should be familiar territory.
+### Make a contribution
 
-## What HPSTR brings to the table:
+- Add your profile to `_data/authors.yml` file which has some fields such as `name`, `web`, `email`, `twitter`, `avatar`. `avatar` is for blogger image where you can provide an image file name that you can add to the folder `images`
 
-* Modern and minimal design.
-* Responsive templates for post, page, and post index `_layouts`. Looks great on mobile, tablet, and desktop devices.
-* Gracefully degrades in older browsers. Compatible with Internet Explorer 8+ and all modern browsers.  
-* Sweet animated menu with support for drop-downs.
-* Optional [Disqus](http://disqus.com) comments and social sharing links.
-* [Open Graph](https://developers.facebook.com/docs/opengraph/) and [Twitter Cards](https://dev.twitter.com/docs/cards) support for a better social sharing experience.
-* Simple [custom 404 page](http://mmistakes.github.io/hpstr-jekyll-theme/404.html) to get you started.
-* Stylesheets for Pygments and Coderay [syntax highlighting](http://mmistakes.github.io/hpstr-jekyll-theme/code-highlighting-post/) to make your code examples look snazzy
-* [Available in Spanish](https://github.com/cruznick/hpstr-jekyll-theme/tree/es). Thanks [@cruznick](https://github.com/cruznick)!
+- All posts on the website are all located in `_posts` folder where the post name format is `yyyy-mm-dd-post-name.md` (`.md` stands for markdown). Jekyll uses [markdown](https://guides.github.com/features/mastering-markdown/) format for the post which can be easily written. We can provide header of each post (markdown file) as
 
-![HPSTR Theme Preview screenshot](http://mmistakes.github.io/hpstr-jekyll-theme/images/hpstr-jekyll-theme-preview.jpg)
-
+```
 ---
+layout: post
+title: "Post Title"
+author: Titipata (author id from authors.yml)
+description: "Short description for the post"
+modified: 2014-12-13
+tags: [post, title, example]
+comments: false (or true if you want people to leave a comment)
+---
+```
 
-## Getting Started
+After the header of each post, you can simply write down a post. You can see example or previous posts in the `_posts` folder
 
-HPSTR takes advantage of Sass and data files to make customizing easier. These features require Jekyll 2.x and will not work with older versions of Jekyll.
-
-To learn how to install and use this theme check out the [Setup Guide](https://mmistakes.github.io/hpstr-jekyll-theme/theme-setup/) for more information. -->
+### Members
+- [Titipat Achakulvisut (My)](http://titipata.github.io)
+- [Tulakan Ruangrong (Tul)](https://github.com/bluenex)
