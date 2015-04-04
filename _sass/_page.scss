@@ -472,16 +472,41 @@ header .entry-meta {
 // author
 // --------------------------------------------------
 .author-side {
-	width: 150px;
 	display: none;
-	position: absolute;
-	left:-175px;
-	top:25px;
 
 	@media #{$limitforauthor} {
+		width: 150px;
 		display:block;
+		position: absolute;
+		left:-175px;
+		top:25px;
+
 	}
 }
+
+// author-mobile
+// --------------------------------------------------
+.author-mobile {
+	display: block;
+	margin-bottom: -1em;
+
+	@media #{$limitforauthor} {
+		display: none;
+	}
+}
+
+.author-mobile .author-social,.author-mobile .author-bio  {
+	display: none;
+}
+
+.author-mobile .bio-photo {
+	margin: 1em 0 -1em;
+	width: 70px;
+	@include rounded(150px);
+}
+// author-mobile
+// --------------------------------------------------
+
 .author-side h3 {
 	text-align: center;
 }
