@@ -18,4 +18,4 @@ Visual illusion เรื่องสีที่คนให้ความส�
 
 ส่วนวีดีโอเต็มๆ สามารถดูได้ตามด้านล่าง
 
-<iframe width="560" height="315" src="//www.youtube.com/watch?v=tB5-JahAXfc" frameborder="0"> </iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/tB5-JahAXfc" frameborder="0" allowfullscreen></iframe>
