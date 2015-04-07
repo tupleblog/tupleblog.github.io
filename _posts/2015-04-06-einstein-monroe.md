@@ -9,7 +9,7 @@ comments: true
 
 เมื่อเช้าที่ผ่านมาได้ดู Youtube ของ ASAP science เกี่ยวกับ Visual Illusion ซึ่งสนุกมากๆ
 
-<img width="300" src=https://twistedsifter.files.wordpress.com/2015/04/albert-einstein-marilyn-monroe-hybrid-image.jpg>
+<img width="300" src="https://twistedsifter.files.wordpress.com/2015/04/albert-einstein-marilyn-monroe-hybrid-image.jpg">
 
 Visual Ilusion หรือแปลไทยว่าภาพลวงตา คือภาพที่เวลาเรามองแล้วสามารถเห็นไปผิดจากความจริง
 Visual Illusion เรื่องสีที่คนให้ความสนใจกันอย่างมากที่ผ่านมาคงจะเป็นรูปของเสื้อที่เราเห็นได้สองแบบคือสีน้ำเงินกับสีดำ หรือสีขาวกับสีทอง สำหรับอันที่เราเพิ่งเจอวันนี้เป็นเรื่องของคนสายตาสั้นกับสายตายาวซึ่งมองเห็นดีเทลของภาพในระดับที่ต่างกัน
