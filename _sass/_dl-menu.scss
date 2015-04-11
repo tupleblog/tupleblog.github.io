@@ -32,6 +32,8 @@
 		opacity: 0.6;
 		@media #{$medium} {
 			@include border-radius(3px,3px,3px,3px);
+			top: 0;
+			left: 0;
 		}
 	}
 	button:hover,
