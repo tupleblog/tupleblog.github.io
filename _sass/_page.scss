@@ -192,7 +192,7 @@ body {
 	}
 }
 header .entry-meta {
-	display: none; // hide header meta on small screens
+	display: block; // hide header meta on small screens
 	@media #{$medium} {
 		display: block;
 	}
@@ -277,7 +277,7 @@ header .entry-meta {
 	}
 }
 
-// Read More Module
+// Read More Module (added)
 .read-more {
 	position: relative;
 	margin: 40px 2px 20px 2px;
@@ -308,7 +308,9 @@ header .entry-meta {
 	}
 }
 .read-more-content {
+	text-align: left;
 	@include font-size(16);
+
 	// Dotted line underlines for links
 	p > a,
 	li > a {
