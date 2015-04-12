@@ -188,7 +188,11 @@ body {
 		}
 	}
 	.entry-reading-time {
-		float: right;
+			display: none;
+			float: right;
+			@media #{$medium} {
+				display: block;
+			}
 	}
 }
 header .entry-meta {

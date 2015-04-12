@@ -28,7 +28,7 @@
 		position: relative;
 		cursor: pointer;
 		outline: none;
-		@include border-radius(0,3px,0,0);
+		@include border-radius(3px,3px,3px,3px);
 		opacity: 0.6;
 		@media #{$medium} {
 			@include border-radius(3px,3px,3px,3px);
