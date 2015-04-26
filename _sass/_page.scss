@@ -78,13 +78,14 @@ body {
 	h1 {
 		margin: 10px;
 		font-weight: 700;
-		margin: 10px 60px;
+		margin: 10px 30px;
 		color: $white;
 		text-shadow: 1px 1px 4px rgba($base-color,0.6);
 		a {
 			color: $white;
 		}
-		@media #{$large} {
+		@media #{$medium} {
+			margin: 10px 60px;
 		}
 	}
 	h2 {
