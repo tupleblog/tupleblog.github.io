@@ -1,10 +1,10 @@
-# Tuple Blog
+# TupleBlog
 
-Repository for [tuple blog](http://tupleblog.github.io) (in Thai) based on [Jekyll](http://jekyllrb.com/) [HPSTR](https://github.com/mmistakes/hpstr-jekyll-theme) theme.
+Repository for [TupleBlog](http://tupleblog.github.io) (in Thai) based on [Jekyll](http://jekyllrb.com/) [HPSTR](https://github.com/mmistakes/hpstr-jekyll-theme) theme.
 
 ### Want to write blogs with us?
 
-- If you want to be a member on Github repository, ask Titipat or Tulakan. We can add you to the repository
+- If you want to be a member on Github repository, ask [Titipat](https://twitter.com/titipat_a) or [Tulakan](http://twitter.com/t_bluenex). We can add you to the repository
 - Alternative is to create pull request by fork this repository
 
 ### Make a contribution
