@@ -45,9 +45,9 @@ Black Friday เริ่มตั้งแต่กลางคืนหลั�
 
 นอกจากเทศกาลแล้ว เราก็ต้องมีเพลงประกอบบ้าง ตอนนี้ชอบสองเพลงนี้มากๆ เพลงหลังนี่ไม่เกี่ยวกับคริสมาสต์เลย
 
-<iframe width="560" height="315" src="https://www.youtube.com/watch?v=z1rYmzQ8C9Q" frameborder="0"> </iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/z1rYmzQ8C9Q" frameborder="0" allowfullscreen></iframe>
 
-<iframe width="560" height="315" src="https://www.youtube.com/watch?v=ZCL-MraDbaI" frameborder="0"> </iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ZCL-MraDbaI" frameborder="0" allowfullscreen></iframe>
 
 
 ## หนังสือแนะนำ
