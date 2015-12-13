@@ -57,6 +57,13 @@
 <!-- 144x144 (precomposed) for iPad 3rd and 4th generation -->
 <link rel="apple-touch-icon-precomposed" sizes="144x144" href="{{ site.url }}/images/apple-touch-icon-144x144-precomposed.png">
 
+<!-- add zoom.js -->
+<link href="{{ site.url }}/assets/css/zoom.css" rel="stylesheet">
+<!-- jquery for js -->
+<script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+<script src="{{ site.url }}/assets/js/zoom.js"></script>
+<script src="{{ site.url }}/assets/js/transition.js"></script>
+
 {% if page.image.background or site.background %}
 {% capture background %}{% if page.image.background %}{{ page.image.background }}{% else %}{{ site.background }}{% endif %}{% endcapture %}
 {% unless background contains 'http://' or background contains 'https://' %}{% capture background %}{{ site.url }}/images/{{ background }}{% endcapture %}{% endunless %}

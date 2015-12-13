@@ -9,7 +9,7 @@ tags: [music, indie]
 comments: true
 ---
 
-คือเป็นคนที่โพสต์เพลงไปบนเฟสบุีคเรื่อยๆ ต้องหาที่มารวมกันซะหน่อย
+คือเป็นคนที่โพสต์เพลงไปบนเฟสบุคเรื่อยๆ ต้องหาที่มารวมกันซะหน่อย
 
 วงแรกคงไม่พ้น The Paper Kites จากออสเตรเลีย เพลงนี้มาจากอัลบัมใหม่ของพวกเค้า Electric Indigo ซึ่งออกมาไม่นานมาก ฟังเพลินมากๆ
 <iframe width="560" height="315" src="https://www.youtube.com/embed/7Fi4T-yR8tM" frameborder="0" allowfullscreen></iframe>
@@ -30,11 +30,11 @@ Oh Wonder ศิลปินคู่สไตล์ electro-pop ดนตรี
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/qjgnOP8f5NU" frameborder="0" allowfullscreen></iframe>
 
-Hey Rosetta! วงจากแคนาดา ซึ่งพึ่งออกอัลบัมใหม่ Second Sight ดนตรีดีมากถึงมากที่สุด mv ข้างล่างนี้ถ่ายที่ Fogo Island ในแคนาดา ซึ่งเป็นที่ที่เราอยากไปมากๆที่นึง
+Hey Rosetta! วงจากแคนาดา ซึ่งพึ่งออกอัลบัมใหม่ Second Sight ดนตรีดีมากถึงมากที่สุด MV ข้างล่างนี้ถ่ายที่ Fogo Island ในแคนาดา ซึ่งเป็นที่ที่เราอยากไปมากๆที่นึง
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/BoMQ1kECjvY" frameborder="0" allowfullscreen></iframe>
 
-Last Dinosaur กลับมากับอัลบัมใหม่เช่นกัน เพงลสดใสร่าเริง ฟังแล้วถึงกับต้องโยกตามดนตรี
+Last Dinosaur กลับมากับอัลบัมใหม่เช่นกัน เพลงสดใสร่าเริง ฟังแล้วถึงกับต้องโยกตามดนตรี
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/M01rsp80LCk" frameborder="0" allowfullscreen></iframe>
 

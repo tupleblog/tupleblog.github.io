@@ -14,14 +14,12 @@ share: true
 ในวันที่ 4 ตุลาคม 2012 สถานีสำรวจ Pan-STARRS ในฮาวายได้ค้นพบดาวเคราะห์น้อยขนาดประมาณบ้านหนึ่งหลัง และได้ตั้งชื่อมันว่าดาวเคราะห์น้อย 2012 TC4 หลังจากค้นพบเพียงหนึ่งสัปดาห์ ดาวเคราะห์น้อยนี้ก็ได้พุ่งผ่านโลกไปที่ระยะห่าง 0.247 LD (lunar distance - ระยะห่างระหว่างโลกและดวงจันทร์) หรือประมาณ 94,800 กม. ดาวเคราะห์น้อยดวงนี้มีลักษณะเป็นทรงรีที่หมุนรอบตัวเองด้วยความเร็วสูง ซึ่งตั้งแต่ได้ค้นพบมันก็ทำให้เราได้รู้ว่ามันเข้าใกล้โลกมาหลายครั้งในอดีต
 
 <figure><center>
-  <a href="http://4.bp.blogspot.com/-FXYGxnG7IaI/VSpgw4FwoLI/AAAAAAAAuOo/uPe_W2P-gvM/s1600/stack_31x60sec.jpg">
-  <img src="http://4.bp.blogspot.com/-FXYGxnG7IaI/VSpgw4FwoLI/AAAAAAAAuOo/uPe_W2P-gvM/s1600/stack_31x60sec.jpg" alt="Asteroid 2012 TC4 as seen by the Remanzacco Observatory team of Ernesto Guido, Giovanni Sostero, Nick Howes on Oct. 9, 2012.
-"/>
-  </a>
+  <img src="http://4.bp.blogspot.com/-FXYGxnG7IaI/VSpgw4FwoLI/AAAAAAAAuOo/uPe_W2P-gvM/s1600/stack_31x60sec.jpg" data-action="zoom"/>
 
   <figcaption>
-    <a title="Asteroid 2012 TC4">ภาพดาวเคราะห์น้อย 2012 TC4 ที่ถูกบันทึกไว้โดยทีมสำรวจ Remanzacco ในวันที่ 9 ตุลาคม 2012
-</a>
+    <a title="Asteroid 2012 TC4">
+      ภาพดาวเคราะห์น้อย 2012 TC4 ที่ถูกบันทึกไว้โดยทีมสำรวจ Remanzacco ในวันที่ 9 ตุลาคม 2012
+    </a>
   </figcaption>
 </center></figure>
 

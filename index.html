@@ -1,8 +1,8 @@
 ---
 layout: post-index
 title:
-description: "Describe this nonsense."
-tags: [Jekyll, theme, themes, responsive, blog, modern]
+description: "tupleblog, blog about anything."
+tags: [tupleblog, blog, technology, geek]
 comments: false
 image:
   feature: abstract-7.jpg
@@ -46,7 +46,7 @@ image:
     {% endif %}
   </header>
   <div class="entry-content">
-    {{ post.content }}
+    {{ post.content | strip_html | truncatewords: 30 }}
   </div><!-- /.entry-content -->
 </article><!-- /.hentry -->
 {% endfor %}
