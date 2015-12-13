@@ -37,3 +37,27 @@ Hey Rosetta! วงจากแคนาดา ซึ่งพึ่งออก
 Last Dinosaur กลับมากับอัลบัมใหม่เช่นกัน เพงลสดใสร่าเริง ฟังแล้วถึงกับต้องโยกตามดนตรี
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/M01rsp80LCk" frameborder="0" allowfullscreen></iframe>
+
+Skylar Spence หรือชื่อเดิมคือ Saint Pepsi มาสไตล์ electro-pop เช่นกัน หลายเพลงของเค้าเป็นเพลงโปรดประจำปีของเราเลย
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/aed4G0cQCNQ" frameborder="0" allowfullscreen></iframe>
+
+Brandon Flower นักร้องนำจาก the Killers ออกอัลบัมเดี่ยว ดู MV แล้วอยากจะหยิบหูฟังขึ้นมาใส่แล้วเต้นทุกที
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/jcZ-0o53md8" frameborder="0" allowfullscreen></iframe>
+
+SOAK ศิลปินเดี่ยวจากไอร์แลนด์ เราฟังเพลงของเธอครั้งแรกจาก NPR music tiny desk concert และหลงรักความเรียบง่ายของดนตรีทันที
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/VgaRm9j8SQI" frameborder="0" allowfullscreen></iframe>
+
+Seoul อีกวงจาก Montreal แคนาดา
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/od1l0LwOtUk" frameborder="0" allowfullscreen></iframe>
+
+Roosevelt จาก Cologne เยอรมัน
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/yXgRm0A4XjE" frameborder="0" allowfullscreen></iframe>
+
+Timecop1983 ทำเพลงออกมาได้อารมณ์ 80's สุด ฟังตอนนั่งรถไฟหรือเครื่องบินเพลินมากๆ
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/HeXdRQnogPQ" frameborder="0" allowfullscreen></iframe>
