@@ -5,7 +5,7 @@ title: สตาร์วอส์บน Mac terminal
 description: "เปลี่ยน terminal เป็นสไตล์สตาร์วอส์"
 tags: [Atom, LaTeX, editor]
 image:
-  background: starwars.jpg
+  feature: starwars.jpg
 comments: true
 share: true
 date: 2015-12-16 12:00:00
