@@ -7,6 +7,7 @@ image:
   feature: music-2015.jpg
 tags: [music, indie]
 comments: true
+date: 2015-12-14 10:40:00
 ---
 
 คือเป็นคนที่โพสต์เพลงไปบนเฟสบุคเรื่อยๆ ต้องหาที่มารวมกันซะหน่อย
