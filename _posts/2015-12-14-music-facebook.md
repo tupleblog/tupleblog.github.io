@@ -15,7 +15,7 @@ date: 2015-12-14 10:40:00
 วงแรกคงไม่พ้น The Paper Kites จากออสเตรเลีย เพลงนี้มาจากอัลบัมใหม่ของพวกเค้า Electric Indigo ซึ่งออกมาไม่นานมาก ฟังเพลินมากๆ
 <iframe width="560" height="315" src="https://www.youtube.com/embed/7Fi4T-yR8tM" frameborder="0" allowfullscreen></iframe>
 
-ต่อไปต้องนี่เลยคู่พี่น้อง Tom Misch, Carmody จากลอนดอน สหราชอาณาจักร
+ต่อไปต้องนี่เลยคู่พี่น้อง Tom Misch, Carmody จากลอนดอน สหราชอาณาจักร เพราะทั้งทั้งอัลบัมเก่าและอัลบัมล่าสุดที่เพิ่งออกมา
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/BVvljrWpNiI" frameborder="0" allowfullscreen></iframe>
 
@@ -55,10 +55,14 @@ Seoul อีกวงจาก Montreal แคนาดา
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/od1l0LwOtUk" frameborder="0" allowfullscreen></iframe>
 
-Roosevelt จาก Cologne เยอรมัน
+Roosevelt จาก Cologne เยอรมัน ส่วนตัวเป็นคนชอบวิธีการถ่ายของ Wes Anderson ซึ่ง MV นี้ถ่ายได้ถูกใจมากๆ
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/yXgRm0A4XjE" frameborder="0" allowfullscreen></iframe>
 
 Timecop1983 ทำเพลงออกมาได้อารมณ์ 80's สุด ฟังตอนนั่งรถไฟหรือเครื่องบินเพลินมากๆ
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/HeXdRQnogPQ" frameborder="0" allowfullscreen></iframe>
+
+ที่ลืมไม่ได้เลยก็ต้อง remix เพลงของ Citizen! สำหรับขาฮิป ขาแดนซ์ที่ชอบ MV แนวพาสเทลป้อบ
+
+<iframe width="560" height="315" src="https://www.youtube.com/watch?v=lc11e4CeWMw" frameborder="0" allowfullscreen></iframe>
