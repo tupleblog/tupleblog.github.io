@@ -65,4 +65,4 @@ Timecop1983 ทำเพลงออกมาได้อารมณ์ 80's �
 
 ที่ลืมไม่ได้เลยก็ต้อง remix เพลงของ Citizen! สำหรับขาฮิป ขาแดนซ์ที่ชอบ MV แนวพาสเทลป้อบ
 
-<iframe width="560" height="315" src="https://www.youtube.com/watch?v=lc11e4CeWMw" frameborder="0" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/lc11e4CeWMw" frameborder="0" allowfullscreen></iframe>
