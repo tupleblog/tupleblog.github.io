@@ -4,7 +4,7 @@ title: Holiday time!
 author: Titipata
 description: "นับถอยหลังสู่คริสมาสต์และปีใหม่ในสหรัฐ"
 image:
-  feature: zoo-light.jpg
+  feature: post/holiday/zoo-light.jpg
 tags: [Christmas, Chicago]
 comments: true
 ---

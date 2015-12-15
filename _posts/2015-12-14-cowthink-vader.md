@@ -5,7 +5,7 @@ title: สตาร์วอร์บน Mac terminal
 description: "เปลี่ยน terminal เป็นสไตล์สตาร์วอร์"
 tags: [Atom, LaTeX, editor]
 image:
-  feature: starwars.jpg
+  feature: post/vader/starwars.jpg
 comments: true
 share: true
 date: 2015-12-14 17:00:00
@@ -31,7 +31,7 @@ $ fortune | cowthink -f vader
 {% endhighlight %}
 
 <figure><center>
-  <img width="400" src="/images/cowth.jpg" data-action="zoom"/>
+  <img width="400" src="/images/post/vader/cowth.jpg" data-action="zoom"/>
 </center></figure>
 
 จริงๆ ใครที่อยากได้รูปแบบอื่นๆ cowthink ก็ยังมีอีกหลายแบบให้เลือก ลองพิมพ์

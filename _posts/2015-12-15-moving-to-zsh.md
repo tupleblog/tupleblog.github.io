@@ -1,11 +1,11 @@
 ---
-author: Tulakanr
+author: tulakann
 layout: post
 title: "[geek] บันทึกการย้ายมาสู่ Zsh"
 description: "จาก bash สู่ Zsh อยากย้ายก็ย้ายดื้อๆ"
 tags: [zsh, terminal, bash, oh-my-zsh, geek]
 image:
-  feature: blog-zsh.jpg
+  feature: post/zsh/blog-zsh.jpg
 comments: true
 share: true
 date: 2015-12-15 12:00:00

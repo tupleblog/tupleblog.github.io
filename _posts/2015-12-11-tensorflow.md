@@ -4,7 +4,7 @@ title: Hands-on Tensorflow
 author: Titipata
 description: "ลองใช้ tensorflow open-source library น้องใหม่จาก Google"
 image:
-  feature: blogimg-tensorflow.jpg
+  feature: post/tensorflow/blogimg-tensorflow.jpg
   credit: wired.com
   creditlink: http://www.wired.com/wp-content/uploads/2015/11/google-tensor-flow-logo-F-1200x630.jpg
 tags: [machine learning, tensorflow, google]
@@ -20,7 +20,9 @@ comments: true
 มาพูดถึงภาพรวมของ TensorFlow ดีกว่า หลังจากที่เราลองโหลดมาใช้งานนั้น ข้อดีและจุดเด่นของ TensorFlow คือเราสามารถเขียน Neural Network ได้ง่ายมากๆ เมื่อเทียบกับ Neural Network หรือ Deep Learning library อื่นๆ ใน Python เช่น [Theano](http://deeplearning.net/software/theano/) หรือ
 [Caffe](http://caffe.berkeleyvision.org/) นอกจากนั้น flow ในการเขียนโค้ดค่อนข้างเข้าใจง่าย และอ่านง่ายมากๆ แถม TensorFlow ยังมากับ Tensor Board ที่เราสามารถดูได้ว่าตอนนี้ข้อมูลของเรา flow ไปยังจุดไหนของ Neural Network หรือ Deep Learning บ้าง ลดระยะเวลาทำความเข้าใจโครงสร้างของ Neural Network ไปได้อย่างมาก เราคิดว่าทั้งสองข้อนี้ซึ่งถือเป็นจุดเด่นของ library เลยก็ว่าได้ ลองดูภาพเพิ่มเติมด้านล่าง
 
-![tensorflow.gif](http://1.bp.blogspot.com/-vDKYuCD8Gyg/Vj0B3BEQfXI/AAAAAAAAAyA/9tWmYUOxo0g/s1600/cifar10_2.gif)
+<figure><center>
+  <img src="http://1.bp.blogspot.com/-vDKYuCD8Gyg/Vj0B3BEQfXI/AAAAAAAAAyA/9tWmYUOxo0g/s1600/cifar10_2.gif" data-action="zoom"/>
+</center></figure>
 
 ส่่วนข้อเสียของ library ก็ยังมีอีกหลายอย่างที่ต้องใช้เวลากว่าจะเข้าที่เข้าทาง ได้แก่ documentation เป็นต้น ตอนนี้ documentation ยังไม่สมบูรณ์อย่างมาก คนที่อยากจะใช้ TensorFlow เพื่อสร้างโมเดลที่ซับซ้อนขึ้น ตอนนี้อาจจะต้องเข้าไปอ่านโค้ดโดยตรงจาก Github เป็นหลัก นอกจากนั้นเรื่องของเวลาที่ใช้ในการเรียนรู้โมเดลหรือ training time ก็ยังไม่ดีมากนักเมื่อเทียบกับ library อื่นๆ ถึงแม้ว่าจะเขียนโมเดลได้เร็วแต่อาจจะต้องใช้เวลาในการฝึกโมเดลมากกว่านั่นเอง
 

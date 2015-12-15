@@ -1,7 +1,7 @@
 ---
 layout: post
 title: ถึงเวลาที่เราจะต้องเริ่มหรือเลิกใช้พลังงานนิวเคลียร์?
-author: Tulakanr
+author: tulakann
 description: "รู้จักกับพลังงานนิวเคลียร์พร้อมทั้งประโยชน์และโทษในมุมมองที่แตกต่างกัน สุดท้ายแล้วคุณคิดอย่างไรกับมัน..."
 tags: [nuclear, power]
 comments: true

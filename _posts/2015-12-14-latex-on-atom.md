@@ -1,11 +1,11 @@
 ---
-author: Tulakanr
+author: tulakann
 layout: post
 title: มาลองเขียน LaTeX บน Atom กัน
 description: "เหมาะสำหรับผู้ที่ใช้ Atom อยู่แล้ว หรือยังไม่มี text editor อะไรในดวงใจเป็นพิเศษแล้วอยากลองเขียน LaTeX"
 tags: [Atom, LaTeX, editor]
 image:
-  feature: latex-atom.jpg
+  feature: post/latexa/latex-atom.jpg
 comments: true
 share: true
 date: 2015-12-14 12:00:00
@@ -56,7 +56,7 @@ date: 2015-12-14 12:00:00
 หลังจากติดตั้งแพคเกจ `latex` เสร็จเรียบร้อยก็ให้กดเข้าไปจะเจอหน้าตั้งค่าหน้าตาประมาณนี้
 
 <figure><center>
-  <img src="/images/latex-set.png" data-action="zoom"/>
+  <img src="/images/post/latexa/latex-set.png" data-action="zoom"/>
 </center></figure>
 
 ส่วนการตั้งค่าที่เราจะสนใจก็คือ
@@ -64,7 +64,7 @@ date: 2015-12-14 12:00:00
 - **Always Open Result In Atom** เลือกอันนี้ไว้เพื่อให้ตัว pdf เปิดมาใน Atom เลย
 - **Builder** จะมี `latexmk` กับ `texify` ส่วนตัวใช้ `latexmk` มาตลอดเลยไม่รู้ว่ามันต่างกันยังไง
 - **Engine** จะมี `pdflatex`, `lualatex` และ `xelatex` ซึ่งโดยปกติผมใช้ `pdflatex` กับ `xelatex` ส่วนเบื้องลึกเบื้องหลังว่าอะไรเป็นยังไงอันนี้ตอนนี้ยังไม่เข้าใจถึงขั้นนั้น เอาเป็นว่าใช้ `pdflatex` ไปก่อนตอนนี้
-- **TeX Path** คือ path ไปยัง `bin` ของ TeX distribution ที่ติดตั้งอยู่ในเครื่องเรานั่นเอง โดยส่วนตัวตรงนี้ก็ไม่ต้องใส่อะไรบนแมคแต่สำหรับวินโดว์จะต้องใส่ประมาณนี้ <figure><center> <img src="/images/latex-path.jpg" data-action="zoom"/> </center></figure> ก็ให้ลองเช็คที่เครื่องตัวเองดูก่อนว่าเป็นเวอร์ชันอะไรแล้วก็ใส่ตามนั้น
+- **TeX Path** คือ path ไปยัง `bin` ของ TeX distribution ที่ติดตั้งอยู่ในเครื่องเรานั่นเอง โดยส่วนตัวตรงนี้ก็ไม่ต้องใส่อะไรบนแมคแต่สำหรับวินโดว์จะต้องใส่ประมาณนี้ <figure><center> <img src="/images/post/latexa/latex-path.jpg" data-action="zoom"/> </center></figure> ก็ให้ลองเช็คที่เครื่องตัวเองดูก่อนว่าเป็นเวอร์ชันอะไรแล้วก็ใส่ตามนั้น
 
 ### ลองเขียน `.tex`
 
@@ -87,13 +87,13 @@ date: 2015-12-14 12:00:00
 ทีนี้มาลองพรีวิวกันเลยดีกว่า กด `ctrl` `alt` `b` ปุ๊บก็น่าจะเจอหน้าตาดังนี้
 
 <figure><center>
-  <img src="/images/latex-try.png" data-action="zoom"/>
+  <img src="/images/post/latexa/latex-try.png" data-action="zoom"/>
 </center></figure>
 
 ซึ่งถ้าเราดูดีๆ ที่ directory ของไฟล์ `.tex` ของเราก็จะพบว่ามันสร้างไฟล์ไม่พึงประสงค์มาเพียบจากการคอมไพล์
 
 <figure><center>
-  <img src="/images/latex-mess.png" data-action="zoom"/>
+  <img src="/images/post/latexa/latex-mess.png" data-action="zoom"/>
 </center></figure>
 
 แต่ก็ไม่ต้องกังวลไปเพราะเราสามารถเคลียร์ไฟล์พวกนี้ได้ด้วยการกด `ctrl` `alt` `c` เท่านี้ก็เป็นอันเสร็จสิ้นกระบวนการ
