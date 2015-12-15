@@ -8,7 +8,7 @@ image:
   feature: starwars.jpg
 comments: true
 share: true
-date: 2015-12-16 12:00:00
+date: 2015-12-14 17:00:00
 ---
 
 ## เปลี่ยน terminal เป็นสไตล์สตาร์วอร์
