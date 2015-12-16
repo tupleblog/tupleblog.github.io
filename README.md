@@ -27,6 +27,9 @@ comments: false (or true if you want people to leave a comment)
 
 After the header of each post, you can simply write down a post. You can see example or previous posts in the `_posts` folder
 
+### Using drafts
+[Drafts](http://jekyllrb.com/docs/drafts/) is a useful feature of Jekyll. To use drafts, first we don't need the date on file name of the post and second we need to place it in `_drafts` folder. After that you can work with drafts by running Jekyll with flag `--drafts`. This blog uses bundler and normally we run by `bundle exec jekyll serve`, thus if you need to see draft as a latest post you need to run `bundle exec jekyll serve --drafts`.
+
 ### Members
 - [Titipat Achakulvisut (My)](http://titipata.github.io)
 - [Tulakan Ruangrong (Tul)](https://github.com/bluenex)
