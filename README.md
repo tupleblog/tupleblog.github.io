@@ -4,7 +4,7 @@ Repository for [TupleBlog](http://tupleblog.github.io) (in Thai) based on [Jekyl
 
 ### Want to write blogs with us?
 
-- If you want to be a member on Github repository, ask [Titipat](https://twitter.com/titipat_a) or [Tulakan](http://twitter.com/t_bluenex). We can add you to the repository
+- If you want to be a member on Github repository, ask [Titipat](https://twitter.com/titipat_a) or [Tulakan](http://twitter.com/tulakann). We can add you to the repository
 - Alternative is to create pull request by fork this repository
 
 ### Make a contribution

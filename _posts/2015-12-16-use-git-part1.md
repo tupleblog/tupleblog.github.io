@@ -3,7 +3,7 @@ author: tulakann
 layout: post
 title: มาเริ่มใช้ Git กัน [part 1]
 description: "จะว่าสอนก็ไม่ใช่ เรียกว่านำทางละกัน ใครยังไม่เคยใช้มาใช้กันเถอะ"
-tags: [git, tutorial]
+tags: [git, github, tutorial, guide, newbie]
 image:
   feature: post/usegit/blogcover.jpg
 comments: true
@@ -20,7 +20,7 @@ date: 2015-12-16 15:30:00
 - ตั้งค่า git เพื่อใช้งานครั้งแรก
 - สร้าง local git repository (repo)
 - สร้างความเปลี่ยนแปลงบน repo
-- สร้าง remote repo บน Github
+- สร้าง remote repo บน GitHub
 - push ความเปลี่ยนแปลงไปยัง remote repo
 - clone remote repo แล้วทำการแก้ไข
 - pull ความเปลี่ยนแปลงจาก remote repo
@@ -28,7 +28,7 @@ date: 2015-12-16 15:30:00
 หลักๆ สำหรับบล็อกนี้ก็น่าจะประมาณนี้ ไปเริ่มกันเลยดีกว่า
 
 ## เตรียมความพร้อม
-สิ่งแรกสุดที่เราต้องมีคือ git นั่นเอง บล็อกของ @titipata ก็กล่าวไว้บ้างแล้ว แต่ถ้ายังไม่ได้ติดตั้งก็ลงมือได้
+สิ่งแรกสุดที่เราต้องมีคือ git นั่นเอง [บล็อกของ @titipata](http://tupleblog.github.io/git-intro/) ก็กล่าวไว้บ้างแล้ว แต่ถ้ายังไม่ได้ติดตั้งก็ลงมือได้
 
 - **Windows** ไปดาวน์โหลดตัวติดตั้งได้จากหน้าเว็บของ Git เลย - [https://git-scm.com/downloads](https://git-scm.com/downloads) แล้วก็ next ยาวๆ จนเสร็จ
 - **Mac** ก็ไปดาวน์โหลดที่หน้าเว็บได้เช่นกัน หรือถ้าใครมี Homebrew หรือ MacPorts ก็ลงผ่าน terminal ได้เลย `brew install git` หรือ `port install git` ก็ว่ากันไป
@@ -36,14 +36,14 @@ date: 2015-12-16 15:30:00
 
 การใช้งานบน Windows ให้เปิดโปรแกรม Git Bash ขึ้นมา ส่วนบน Mac และ Linux ก็เปิด terminal ขึ้นมา เท่านี้ก็พร้อมลุยกันแล้ว
 
-สิ่งที่ต้องทำต่อมาคือการระบุตัวตนโดยเราจะต้องใส่ชื่อกับอีเมล์ของเราให้ git จำไว้ เพื่อเวลาที่มีการแก้ไขจะได้รู้ว่าใครเป็นคนแก้ไข โดยอีเมล์แนะนำให้ใช้อันเดียวกับที่สมัคร Github ส่วนชื่อก็อะไรก็ได้ เหมือน username บน Github ก็ดี
+สิ่งที่ต้องทำต่อมาคือการระบุตัวตนโดยเราจะต้องใส่ชื่อกับอีเมล์ของเราให้ git จำไว้ เพื่อเวลาที่มีการแก้ไขจะได้รู้ว่าใครเป็นคนแก้ไข โดยอีเมล์แนะนำให้ใช้อันเดียวกับที่สมัคร GitHub ส่วนชื่อก็อะไรก็ได้ เหมือน username บน GitHub ก็ดี
 
 {% highlight bash %}
 $ git config --global user.name "Your Name"
 $ git config --global user.email yourEmail@example.com
 {% endhighlight %}
 
-พูดถึง Github ถ้ายังไม่มีแอคเคาท์ก็ไปสมัครไว้ก่อนเลยนะ ที่นี่เลย [https://github.com/join](https://github.com/join)
+พูดถึง GitHub ถ้ายังไม่มีแอคเคาท์ก็ไปสมัครไว้ก่อนเลยนะ ที่นี่เลย [https://github.com/join](https://github.com/join)
 
 ## คำสั่งพื้นฐาน
 
@@ -93,7 +93,7 @@ readme.md
 
 
 ## ทดลองกับของจริง
-อะ รู้จักแล้วก็ไปกันต่อเลย ต่อไปเราจะสร้าง Github repo กัน ไปที่เว็บ [http://github.com](http://github.com) พอล็อกอินเรียบร้อยเราก็จะอยู่ที่หน้าหลัก ดูข้างบนด้านขวากด **+** เลือก create new repository แล้วก็ตั้งชื่ออะไรก็ได้ แต่จะให้ดีก็ใช้ชื่อ `gitrepo` ดีกว่า
+อะ รู้จักแล้วก็ไปกันต่อเลย ต่อไปเราจะสร้าง GitHub repo กัน ไปที่เว็บ [http://github.com](http://github.com) พอล็อกอินเรียบร้อยเราก็จะอยู่ที่หน้าหลัก ดูข้างบนด้านขวากด **+** เลือก create new repository แล้วก็ตั้งชื่ออะไรก็ได้ แต่จะให้เหมือนกันเป๊ะก็ใช้ชื่อ `gitrepo` ละกัน
 
 <figure><center>
   <img src="/images/post/usegit/https.png" data-action="zoom"/>
@@ -206,7 +206,7 @@ To https://github.com/bluenex/gitrepo.git
  * [new branch]      master -> master
 {% endhighlight %}
 
-เราจะเห็นได้ว่าการ push ทุกครั้งนั้นเราจะต้องกรอก username และ password ซึ่งก็เป็นรูปแบบการรักษาความปลอดภัยผ่านโปรโตคอล `HTTPS` ถ้าเริ่มเบื่อที่จะกรอกแล้วก็แนะนำให้ไปทำความรู้จักกับ `SSH` หรือ [Secure Shell](https://en.wikipedia.org/wiki/Secure_Shell) ซึ่งจะใช้รูปแบบอื่นในการรักษาความปลอดภัย
+เราจะเห็นได้ว่าการ push ทุกครั้งนั้นเราจะต้องกรอก username และ password ซึ่งก็เป็นรูปแบบการรักษาความปลอดภัยผ่านโปรโตคอล `HTTPS` ถ้าเริ่มเบื่อที่จะกรอกแล้วก็แนะนำให้ไปทำความรู้จักกับ `SSH` หรือ [Secure Shell สำหรับ GitHub](https://help.github.com/articles/generating-ssh-keys/) ซึ่งจะใช้รูปแบบอื่นในการรักษาความปลอดภัย
 
 เมื่อทำการ push เสร็จเรียบร้อยไม่มี error ใดๆ ก็ลองกลับไปเช็คที่หน้าเว็บ GitHub อีกที ลองรีเฟรชหน้าเมื่อกี้ดูก็จะพบว่ามันเปลี่ยนไปแล้ว
 
@@ -290,7 +290,7 @@ To https://github.com/bluenex/gitrepo.git
    8eec696..fc8d069  master -> master
 {% endhighlight %}
 
-ถึงตรงนี้เราก็กลับไปดูที่ Github อีกครั้ง กดรีเฟรชแล้วคุณก็จะพบกับ...
+ถึงตรงนี้เราก็กลับไปดูที่ GitHub อีกครั้ง กดรีเฟรชแล้วคุณก็จะพบกับ...
 
 <figure><center>
   <img src="/images/post/usegit/readme-github.png" data-action="zoom"/>
