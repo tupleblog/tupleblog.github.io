@@ -30,6 +30,14 @@ After the header of each post, you can simply write down a post. You can see exa
 ### Using drafts
 [Drafts](http://jekyllrb.com/docs/drafts/) is a useful feature of Jekyll. To use drafts, first we don't need the date on file name of the post and second we need to place it in `_drafts` folder. After that you can work with drafts by running Jekyll with flag `--drafts`. This blog uses bundler and normally we run by `bundle exec jekyll serve`, thus if you need to see draft as a latest post you need to run `bundle exec jekyll serve --drafts`.
 
+### Start writing
+After cloning repo you can start writing a post. To be able to see how it would look like when served you need to install some of the requirements.
+
+Go to tupleblog repo and run `npm install` to install all required node modules. Then run `bundle install` to install all required gems, and you are good to go. By default we run jekyll by `bundle exec jekyll serve --watch --drafts`, but by now I've included [Gulp to help in live-reloading](https://nvbn.github.io/2015/06/19/jekyll-browsersync/), so to observe how the blog looks like you need to do 2 things.
+
+- go to `_config.yml` and then go to line 9. Do following comments there.
+- run `gulp` and the blog is served!
+
 ### Members
 - [Titipat Achakulvisut (My)](http://titipata.github.io)
 - [Tulakan Ruangrong (Tul)](https://github.com/bluenex)
