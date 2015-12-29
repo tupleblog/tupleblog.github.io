@@ -38,10 +38,21 @@ $$\cfrac{d}{dt}\cfrac{\partial L}{\partial \dot{q}} = \cfrac{\partial L}{\partia
 
 เมื่อ \\(q\\) คือเวกเตอร์ของตัวแปรในระบบ สมมติเราแค่เขียนสมการของ single pendulum ตัวแปรก็คือแค่ \\(\theta\\) นั่นเอง ถ้า double pendulum ก็จะเป็น \\( \theta_1, \theta_2 \\) เป็นต้น
 
-เมื่อเราเขียนและแก้สมการลากรานจ์
+เมื่อเราเขียนและแก้สมการลากรานจ์ทั้งหมดแล้ว ก็จะได้มาการการเคลื่อนที่ของวัตถุมานั่นเอง เช่น สมมติว่า \\(q = [x, y]^T\\) ก็จะมีสมการลากรานจ์ 2 สมการ ซึ่งแก้ได้ทั้งหมด 2 differential equation
 
 
 ### ตัวอย่างที่ 1: ก้อนมวลตกลงบนพื้น
+
+<figure><center>
+  <img width="800" src="/images/post/lagrangian/lagrangian_example.png" data-action="zoom"/>
+
+  <figcaption>
+    <a title="Skype subscription">
+      ภาพประกอบตัวอย่างการแก้สมการลากรานจ์ (1) ก้อนมวลตกลงบนพื้น (2) ตุ้มนาฬิกา (3) ตุ้มนาฬิกาสองอัน
+    </a>
+  </figcaption>
+</center></figure>
+
 
 จุดมวล \\(m\\) ตกลงบนพื้นด้วยแรงโน้มถ่วง \\(g\\) โดยเรากำหนดให้ \\(x\\) เป็นความสูงของวัตถุเทียบกับพื้น ในที่นี้ตัวแปร \\(q\\) คือ \\(x\\) นั่นเอง เขียนพลังงานจลน์ได้ว่า \\(KE = \frac{1}{2}m\dot{x}^2 \\) ส่วนพลังงานศักย์ \\(PE = mgx \\) ในที่ ดังนั้นเราเขียน Lagrange ได้ดังต่อไปนี้
 
@@ -68,7 +79,7 @@ $$L = KE - PE = \frac{1}{2}m(L \dot{\theta})^2 - mgL(1 - \cos(\theta))$$
 ดังนั้นสมการการเคลื่อนที่จึงเขียนได้ดังนี้ \\( mL^2 \ddot{\theta} = -mgL\sin(\theta) \\) หรือว่า \\( \ddot{\theta} = -\cfrac{g}{L}sin(\theta) \\)
 
 
-### ตัวอย่างที่ 3: Double pendulum
+### ตัวอย่างที่ 3: ตุ้มนาฬิกาสองอัน หรือ Double pendulum
 
 วิธีการก็เหมือนกันกับ single pendulum เป๊ะ แค่เราต้องเขียนพลังงานจลน์และพลังงานศักย์ของมวลอีกก้อนเพิ่ม diagram ของ double pendulum ดูได้จากข้างบน สำหรับสมการนั้นเราจะไปแก้กันโดยใช้ Mathematica เลย เราจะไม่เขียนลงไปในโพสต์ แต่เชื่อว่าผู้ที่อ่านมาถึงจุดนี้สามารถลองเช็คคำตอบของตัวเองได้กับ Mathematica โดยตรงเลย
 
@@ -87,6 +98,17 @@ $$\cfrac{d}{dt}\cfrac{\partial L}{\partial \dot{\theta_2}} = \cfrac{\partial L}{
 
 
 จริงๆส่วนของการแก้สมการจบแค่ช่วงแรกเท่านั้น แต่เนื่องจากเราต้องการเอาค่าของ \\( \theta_1, \theta_2 \\) จากเวลา 0 ถึง 50 มาพล้อตเป็นแบบแอนิเมชั่นด้วย จึงต้องใช้ `NDSolve` ของ Mathematica เพื่อแก้สมการ
+
+<figure><center>
+  <img src="https://raw.githubusercontent.com/tupleblog/tupleblog.github.io/master/images/post/lagrangian/double_pendulum.gif"/>
+
+  <figcaption>
+    <a title="Skype subscription">
+      ตัวอย่างของ Double pendulum หลังจากใช้ Mathematica แก้สมการ
+    </a>
+  </figcaption>
+</center></figure>
+
 
 ## สรุป
 
