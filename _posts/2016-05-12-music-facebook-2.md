@@ -49,6 +49,19 @@ Darwin Deez พ่อหนุ่มหน้าตากวนตีนจา�
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/ZwLusGU9go0" frameborder="0" allowfullscreen></iframe>
 
+Young The Giant วงจาก Irvine แคลิฟอร์เนีย กลับมาอีกครั้งกับดนตรีที่ล้ำไปอีกระดับ
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/8P1utNegyt4" frameborder="0" allowfullscreen></iframe>
+
+Crows วงจากฟิลิปปินส์ ดนตรีดีจริงจัง
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/8qwW8CHchGc" frameborder="0" allowfullscreen></iframe>
+
+วงจากสก็อตแลนด์อีกวง เพลงคุณภาพ mv คุณภาพ
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/bBdsY_zsv_U" frameborder="0" allowfullscreen></iframe>
+
+
 ปิดท้ายด้วยสองวงในตำนาน Radiohead กับ Tempertrap ที่กลับมากับเพลงใหม่ รีวิวหลายๆที่บอกว่า
 ไม่ค่อยชอบเพลงใหม่ของ Radiohead แต่เราว่ามันโคตรดีเลย
 
