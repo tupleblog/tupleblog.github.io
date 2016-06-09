@@ -67,7 +67,7 @@ with some statistic.
 After the setup, what we want to do is we want to describe statistic of these
 activity i.e.
 
-**GOAL:** Our goal is to describe expectation of \\(y_i(k) or \langle y_i(k) \rangle \\).
+**GOAL:** Our goal is to describe expectation of \\(y_i(k)\\) or \\(\langle y_i(k) \rangle \\).
 
 ## Formulation of (Poisson) Generalized Linear Model
 
@@ -109,6 +109,9 @@ from python library for GLM, [pyglmnet](https://github.com/pavanramkumar/pyglmne
 
 
 ## Effect from other neurons
+
+Now, we want to write down \\(\lambda_i (k)\\) in terms of effect from itself and
+other neurons (using some parameters \\(\alpha_{ii}, \alpha_{ij}\\)).
 
 Activity of neuron \\(i\\) at bin \\(k\\) can be influenced from other neurons also.
 For example, effect of neural firing in dorsal or ventral premotor cortex area (PMd) from some time
