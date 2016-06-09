@@ -93,15 +93,19 @@ all neurons and time bin
 
 $$L = \prod_{i=1}^{N} \prod_{k=1}^{K} \bigg\{ \frac{\lambda_i(k)^{y_i(k)}}{y_i(k)!} e^{-\lambda_i(k)} \bigg\}$$
 
-Generally, what we do is take a log of likelihood (so called log-likelihood) which
+Generally, what we do is take a log of likelihood (so called _log-likelihood_) which
 will turn all the product into summation
 
-$$\ell = \ln L = \sum_{i=1}^{N} \sum_{k=1}^K \bigg\{ y_i(k) \ln \lambda_i (k) - \lambda_i(k) - \ln \big[ y_i(k)! \big] \bigg\}$$
+$$\begin{eqnarray}
+\ell &=& \ln L      \nonumber \\
+&=& \sum_{i=1}^{N} \sum_{k=1}^K \bigg\{ y_i(k) \ln \lambda_i (k) - \lambda_i(k) - \ln \big[ y_i(k)! \big] \bigg\} \nonumber
+\end{eqnarray}$$
 
 The beauty of this log-likelihood function is that each dimensions,
-we can show that the cost looks like concave downward. That is we can minimize this
-cost function easily. You can see how we find gradient of log-likelihood function more in this [tutorial](http://pavanramkumar.github.io/pyglmnet/tutorials/plot_tutorial.html#sphx-glr-tutorials-plot-tutorial-py)
-from python library for GLM [pyglmnet](https://github.com/pavanramkumar/pyglmnet).
+we can show that the cost looks like concave downward. That is, we can minimize this
+cost function easily by gradient descent. You can see how we find gradient of
+log-likelihood function more in this [tutorial](http://pavanramkumar.github.io/pyglmnet/tutorials/plot_tutorial.html#sphx-glr-tutorials-plot-tutorial-py)
+from python library for GLM, [pyglmnet](https://github.com/pavanramkumar/pyglmnet).
 
 
 ## Effect from other neurons
@@ -135,7 +139,12 @@ function is one of link function from exponential family
 
 we can again plug \\( \lambda_i(k) \\) to likelihood \\(L\\)
 
-$$\ell = \ln L = \sum_{i=1}^{N} \sum_{k=1}^K \bigg\{ y_i (k) \Big[ \alpha_{i0} + \sum_{j=1}^{N} \sum_{m=1}^\tau \alpha_{ij}(m) y_j(k - m) \Big] - \exp \Big[ \alpha_{i0} + \sum_{j=1}^{N} \sum_{m=1}^\tau \alpha_{ij}(m) y_j(k-m) \Big] - \ln \big[ y_i(k)! \big]$$
+
+$$\begin{eqnarray}
+\ell &=& \ln L      \nonumber \\
+&=& \sum_{i=1}^{N} \sum_{k=1}^K \bigg\{ y_i (k) \Big[ \alpha_{i0} + \sum_{j=1}^{N} \sum_{m=1}^\tau \alpha_{ij}(m) y_j(k - m) \Big] \nonumber \\
+&& - \exp \Big[ \alpha_{i0} + \sum_{j=1}^{N} \sum_{m=1}^\tau \alpha_{ij}(m) y_j(k-m) \Big] - \ln \big[ y_i(k)! \big] \bigg\} \nonumber
+\end{eqnarray}$$
 
 If we looked through literature, these parameters sometimes claimed as _effective connectivity_.
 This means that in GLM, we cannot claim direct connectivity since neuron \\(j\\) might indirectly
@@ -147,20 +156,32 @@ influence neuron \\(i\\) but we don't actually know.
 One paper that analyze neural data using GLM was from Nature 2010 by [Truccolo, Donoghue](http://www.nature.com/neuro/journal/v13/n1/abs/nn.2455.html). Here,
 we want to find relationship of neural spikes between premotor area and motor area.
 We can again form GLM to describe activity in M1 area from both area M1 itself and
-PMv. Activity in motor area can be model as follows
+PMv. We denote \\(\lambda_i^{M}(k)\\) and \\(\lambda_i^{PM}(k)\\) as neural activation
+in motor cortex and premotor cortex respectively.  Activity in motor area can be model as follows:
 
-$$\lambda_i^{M}(k) = \exp \big\{ \alpha_{i0} + \sum_{j=1}^{N_M} \sum_{m=1}^{\tau} \alpha_{ij}^{MM}(m) y_j^M(k-m) \big\} + \sum_{l=1}^{N_{PM}} \sum_{m=1}^{\tau} \alpha_{il}^{M-PM (m)} y_l^{PM} (k-m) \big\}$$
+$$\begin{eqnarray}
+\lambda_i^{M}(k) &=&  \exp \big\{ \alpha_{i0} + \sum_{j=1}^{N_M} \sum_{m=1}^{\tau} \alpha_{ij}^{MM}(m) y_j^M(k-m) \nonumber \\
+& & + \sum_{l=1}^{N_{PM}} \sum_{m=1}^{\tau} \alpha_{il}^{M-PM (m)} y_l^{PM} (k-m) \big\} \nonumber
+\end{eqnarray}$$
+
 
 Same in premotor area,
 
-$$\lambda_i^{PM}(k) = \exp \bigg\{ \alpha_{i0} + \sum_{l=1}^{N_{PM}} \sum_{m=1}^{\tau} \alpha_{il}^{PM-PM}(m) y_j^{PM}(k-m) \big\} + \sum_{j=1}^{N_{M}} \sum_{m=1}^{\tau} \alpha_{ij}^{PM-PM (m)} y_j^{M} (k-m) \bigg\}$$
+$$\begin{eqnarray}
+\lambda_i^{PM}(k) &=& \exp \bigg\{ \alpha_{i0} + \sum_{l=1}^{N_{PM}} \sum_{m=1}^{\tau} \alpha_{il}^{PM-PM}(m) y_j^{PM}(k-m) \nonumber \\
+& & + \sum_{j=1}^{N_{M}} \sum_{m=1}^{\tau} \alpha_{ij}^{PM-PM (m)} y_j^{M} (k-m) \bigg\}
+\end{eqnarray}$$
 
-Not only neural activitรes from other areas that can be used in GLM. We can also
-incorporate effects from kinematics too. For example, we can add arm velocity in
-order to predict neural activity or neuron \\(i\\) at bin \\(k\\),
 
-$$\lambda_i(k) = \exp \bigg\{  \alpha_{i0} + \sum_{m=1}^{\tau} \alpha_{ii}(m) y_i (k-m) + \sum_{j=1, j \neq i}^{M} \sum_{m=1}^{\tau} \alpha_{ij}(m) y_j(k-m) + \sum_{m'=0}^{\tau_K} \alpha_{ix}(m') v_x (k + m') + \sum_{m'=1}^{\tau_K} \alpha_{iy}(m') v_y (k + m') \bigg\} $$
+Not only neural activities from other areas that can be used in GLM. We can also
+incorporate effects from kinematics at some time lag \\(m'\\) too (with different time bin)
+i.e. (\\(v_x(k + m'), v_y(k + m')\\) ). For example, we can add arm velocity in order to predict neural activity or neuron \\(i\\) at bin \\(k\\),
 
+
+$$\begin{eqnarray}
+\lambda_i(k) &=& \exp \bigg\{  \alpha_{i0} + \sum_{m=1}^{\tau} \alpha_{ii}(m) y_i (k-m) +  \sum_{j=1, j \neq i}^{M} \sum_{m=1}^{\tau} \alpha_{ij}(m) y_j(k-m) \nonumber \\
+& & + \sum_{m'=0}^{\tau_K} \alpha_{ix}(m') v_x (k + m') + \sum_{m'=1}^{\tau_K} \alpha_{iy}(m') v_y (k + m') \bigg\}
+\end{eqnarray}$$
 
 If you see figure 1 from [Truccolo, Donoghue](http://www.nature.com/neuro/journal/v13/n1/abs/nn.2455.html),
 the parameters \\(\alpha_{ii}\\) and \\(\alpha_{ij}\\) are roughly as follows
@@ -182,11 +203,15 @@ other neurons also influence by some time lag.
 
 ## Where to start using GLM?
 
-There are existing packages that implement Generalized Linear Model (GLM).
+All the lecture above is mainly the formulation of GLM. However, it's good to
+know how to derive gradient of GLM cost function also.
+
+There are existing packages that implement Generalized Linear Model (GLM) and
+tutorial include:
 
 - python: [pyglmnet](https://github.com/pavanramkumar/pyglmnet)
 - R: [glmnet](https://web.stanford.edu/~hastie/glmnet/glmnet_alpha.html)
 
-You can choose link function much more than poisson. In order to solve GLM cost function,
-past literatures use simple gradient descent algorithm or coordinate gradient descent
-algorithm which we won't describe here.
+In these packages, you can choose link function much more than poisson.
+In order to solve GLM cost function, past literatures use simple gradient descent
+algorithm or coordinate gradient descent algorithm which we won't describe here.
