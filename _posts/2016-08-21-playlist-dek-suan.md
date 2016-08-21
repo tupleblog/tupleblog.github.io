@@ -31,6 +31,10 @@ date: 2016-08-12 10:40:00
 
 <iframe width="420" height="315" src="https://www.youtube.com/embed/g_y50-84e-Y" frameborder="0" allowfullscreen></iframe>
 
+อันนี้เพลงอกหักของณัฐ ฮาร์โมนิกครับ ตะวันให้ใส่เพลงนี้ :P
+
+<iframe width="420" height="315" src="https://www.youtube.com/embed/je-jssxg8ck" frameborder="0" allowfullscreen></iframe>
+
 มาที่ศิษย์เก่าสวนกุหลาบบ้าง พี่ตูน นี่เอง อัลบัมตามชื่อวงเลย บอดี้แสลม
 
 <iframe width="420" height="315" src="https://www.youtube.com/embed/ps2gujVoAUY" frameborder="0" allowfullscreen></iframe>
@@ -40,18 +44,19 @@ date: 2016-08-12 10:40:00
 <iframe width="420" height="315" src="https://www.youtube.com/embed/XrAsJeo9oLU" frameborder="0" allowfullscreen></iframe>
 
 คือนั่นแหละ เพื่อนเราชื่อตึกโพสต์เพลงก่อนหน้า ไม่รู้จะหาวงอะไรมาสู้ ถ้าจะหาวงที่สู้บอดี้แสลมได้ ก็คงต้อง Morning surfer เลย
-ก่อนตั้งโดยพวกพี่ๆชมรมเชียร์ โรงเรียนสวนกุหลาบฯ เพลงนี้ชื่อว่า เกี่ยวกับเรา และ เผ้ารอ
+วงนี้ก่อตั้งโดยพวกพี่ๆชมรมเชียร์ โรงเรียนสวนกุหลาบฯ เพลงนี้ชื่อว่า เกี่ยวกับเรา และ เผ้ารอ
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/cGk9dFC7Tsw" frameborder="0" allowfullscreen></iframe>
 
 <iframe width="420" height="315" src="https://www.youtube.com/embed/Hy0zOk1E5Z0" frameborder="0" allowfullscreen></iframe>
 
 ต่อด้วยเพลงจากอัลบัมแรกในตำนานของวงฟลัวร์ สมัยก่อนต้องไปดูคอนเสิร์ตเพราะว่าจะรู้ดูพี่เท็ดดี้ควงกีตาร์
-พี่เอิร์ธโซโล่กลอง โยนไม้ แล้วก็ตะโกนร้องตามพี่คิว
+พี่เอิร์ธโซโล่กลอง โยนไม้กลอง แล้วก็ตะโกนร้องตามพี่คิว
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/aa2DZcCtpJo" frameborder="0" allowfullscreen></iframe>
 
-เพลงถัดไป Soundlanding ไม่ได้ชื่อเพลงวันไร้สมองเหมือนวงพราวนะ อันนี้ชื่อเพลงว่า วันไร้สติ
+เพลงถัดไป Soundlanding ไม่ได้ชื่อเพลงวันไร้สมองเหมือนวงพราวนะ อันนี้ชื่อเพลงว่า วันไร้สติ งงทุกครั้งว่าวงไหน
+เป็นวงไหน
 
 <iframe width="420" height="315" src="https://www.youtube.com/embed/Og5uUov9QIk" frameborder="0" allowfullscreen></iframe>
 
@@ -146,6 +151,14 @@ Playground เป็นอีกวงที่ต้องเล่นกีต
 "กำแพง"เลย เพลงนี้อยู่ในอัลบัมโทรธิปไตย สมัยที่เราต้องร้องเพลงพร้อมกันว่า "ทรัพย์สินออกไป!"
 
 <iframe width="420" height="315" src="https://www.youtube.com/embed/-gvlvI_yXws" frameborder="0" allowfullscreen></iframe>
+
+เพลงนี้ของจีน มหาสมุทร ชัชชลเปิดเพลงนี้ช่วงจัดรายการวิทยุของโรงเรียนสวนกุหลาบฯ
+
+<iframe width="420" height="315" src="https://www.youtube.com/embed/MdOxwEH3DUw" frameborder="0" allowfullscreen></iframe>
+
+เกือบปิดท้าย ด้วยเพลงจาก Saliva Bastards จนถึงปี 2016 เรายังร้องเพลงนี้อยู่ครับ 5555
+
+<iframe width="420" height="315" src="https://www.youtube.com/embed/zlSvn9sJekQ" frameborder="0" allowfullscreen></iframe>
 
 สุดท้ายขอปิดด้วย อีกไม่นาน จากจุ๋ย จุ๋ยส์ จำได้ว่า MV เพลงนี้มันดีมาก คือต้องเปิด MTV รอดู music video อ่ะ
 สมัยก่อนนี่เพลงมันหาฟังยากแล้วมีคุณค่าดีนะ
