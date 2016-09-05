@@ -40,6 +40,10 @@ date: 2016-09-04 12:34:00
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/Sa5HNkGrl8E" frameborder="0" allowfullscreen></iframe>
 
+Mutemath เพลงที่เรากับเพื่อนชอบมาก ดนตรีมันตึบๆดีมาก
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/DcnsJtyDk8k" frameborder="0" allowfullscreen></iframe>
+
 วงนี้ชื่อว่า Halfnoise วงจาก Nashville, Tennessee
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/X9rMNCW3lnA" frameborder="0" allowfullscreen></iframe>
@@ -56,10 +60,14 @@ date: 2016-09-04 12:34:00
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/1FR5XvKCcu0" frameborder="0" allowfullscreen></iframe>
 
-เกือบปิดท้ายไว้ด้วยสองเพลงนี้จาก Mac DeMarco
+เกือบปิดท้ายไว้ด้วยสามเพลงนี้ เพลงแรกจาก Mac DeMarco
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/wIuBcb2T55Q" frameborder="0" allowfullscreen></iframe>
 
 แล้วก็ Young the Giant กับเพลง Art exhibit จากอัลบัมใหม่ Home of strange
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/p11XD7Zhw4U" frameborder="0" allowfullscreen></iframe>
+
+เพลงสุดท้ายกลับมาที่อะคูสติกอีกทีของ the Villagers
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/gFc4JhfnJ4M" frameborder="0" allowfullscreen></iframe>
