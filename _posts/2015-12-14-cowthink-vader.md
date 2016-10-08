@@ -3,7 +3,7 @@ author: Titipata
 layout: post
 title: สตาร์วอร์บน Mac terminal
 description: "เปลี่ยน terminal เป็นสไตล์สตาร์วอร์"
-tags: [Atom, LaTeX, editor]
+tags: [geek, terminal]
 image:
   feature: post/vader/starwars.jpg
 comments: true
