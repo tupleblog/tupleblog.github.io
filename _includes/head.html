@@ -69,12 +69,3 @@
 {% unless background contains 'http://' or background contains 'https://' %}{% capture background %}{{ site.url }}/images/{{ background }}{% endcapture %}{% endunless %}
 <style type="text/css">body {background-image:url({{ background }});}</style>
 {% endif %}
-
-<!-- mourning color for HM King passed away -->
-<style type="text/css">
-  html {
-    -moz-filter: grayscale(98%); /* firefox */
-    -webkit-filter: grayscale(98%); /* Chrome, Safari, Opera */
-    filter: grayscale(98%);
-  }
-</style>

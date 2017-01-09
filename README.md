@@ -33,7 +33,13 @@ After the header of each post, you can simply write down a post. You can see exa
 ### Start writing
 After cloning repo you can start writing a post. To be able to see how it would look like when served you need to install some of the requirements.
 
-Go to tupleblog repo and run `npm install` to install all required node modules. Then run `bundle install` to install all required gems, and you are good to go. By default we run jekyll by `bundle exec jekyll serve --watch --drafts`, but by now I've included [Gulp to help in live-reloading](https://nvbn.github.io/2015/06/19/jekyll-browsersync/), so to observe how the blog looks like you need to do 2 things.
+Go to tupleblog repo and run `npm install` to install all required node modules. Then run `bundle install` to install all required gems, and you are good to go. By default we run jekyll by
+
+```
+bundle exec jekyll serve --watch --drafts
+```
+
+but by now I've included [Gulp to help in live-reloading](https://nvbn.github.io/2015/06/19/jekyll-browsersync/), so to observe how the blog looks like you need to do 2 things.
 
 - go to `_config.yml` and then go to line 9. Do following comments there.
 - run `gulp` and the blog is served!
