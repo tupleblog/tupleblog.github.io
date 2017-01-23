@@ -49,7 +49,8 @@ sass:
   sass_dir: _sass
   style: compressed
 
-# workaround
+# workaround for ssl error due to jekyll-gist 
+# see https://github.com/jekyll/jekyll/issues/5037
 gist:
   noscript: false
 

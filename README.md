@@ -44,6 +44,20 @@ but by now I've included [Gulp to help in live-reloading](https://nvbn.github.io
 - go to `_config.yml` and then go to line 9. Do following comments there.
 - run `gulp` and the blog is served!
 
+### Running on Windows
+
+Try following steps below.
+
+- In case you haven't already, go download **RubyInstaller** and **DEVELOPMENT KIT** regarding your OS architecture from [here](https://rubyinstaller.org/downloads/).
+- For **RubyInstaller**, just double click and done. For **DEVELOPMENT KIT**, please follows [its instruction](https://github.com/oneclick/rubyinstaller/wiki/Development-Kit).
+- Update Ruby Gems to latest version (see [this](http://guides.rubygems.org/ssl-certificate-update/#installing-using-update-packages)).
+- If updating failed try running `gem update --system`.
+- Clone repo and run `npm install`.
+- Run `gem install bundler`.
+- Run `cmd` as Administrator and run `bundle install` (some gems need permissions to install).
+- Everything should be all set, try serving by `bundle exec jekyll serve --watch`.
+- If failed, please feel free to create an issue :)
+
 ### Members
 - [Titipat Achakulvisut (My)](http://titipata.github.io)
 - [Tulakan Ruangrong (Tul)](https://github.com/bluenex)
