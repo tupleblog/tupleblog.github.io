@@ -3,38 +3,37 @@ description:      บล็อกภาษาไทยที่อยากเ�
 disqus_shortname: tupleblog
 reading_time:     true
 words_per_minute: 800
-# Your site's domain goes here (eg: //mmistakes.github.io, http://mademistakes.com, etc)
+# Your site's domain goes here (eg: https://mmistakes.github.io, http://yourdomain.com, etc)
 # When testing locally leave blank or use http://localhost:4000
-
 # url: # comment this when pushing to server
 url: //tupleblog.github.io # comment this when testing locally
 
 # Owner/author information
 owner:
-  name:           tupleblog
-  avatar:         tpbloglogo.png
-  bio:            "บล็อกภาษาไทยที่อยากเขียนอะไรก็เขียน"
-  email:          tupleblog@outlook.com
+  name: tupleblog
+  avatar: tpbloglogo.png
+  bio: "บล็อกภาษาไทยที่อยากเขียนอะไรก็เขียน"
+  email: tupleblog@outlook.com
   # Social networking links used in footer. Update and remove as you like.
-  twitter:
-  facebook:
-  github:         tupleblog
-  stackexchange:
-  linkedin:
-  instagram:
-  flickr:
-  tumblr:
+  twitter:        
+  facebook:       
+  github: tupleblog      
+  stackexchange:  
+  linkedin:       
+  instagram:      
+  flickr:         
+  tumblr:         
   # google plus id, include the '+', eg +mmistakes
   google_plus:
 
 # Background image to be tiled on all pages
-background:
+background: 
 
 # Analytics and webmaster tools stuff goes here
 google_analytics: UA-62561922-1
-google_verify:
+google_verify:      
 # https://ssl.bing.com/webmaster/configure/verify/ownership Option 2 content= goes here
-bing_verify:
+bing_verify:         
 
 # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 timezone:    Asia/Bangkok
@@ -45,6 +44,7 @@ gems:
   - jekyll-sitemap
   - jekyll-paginate
   - jekyll-gist
+  - jekyll-feed
 sass:
   sass_dir: _sass
   style: compressed
@@ -52,7 +52,7 @@ sass:
 # workaround for ssl error due to jekyll-gist 
 # see https://github.com/jekyll/jekyll/issues/5037
 gist:
-  noscript: false
+  noscript: false  
 
 # https://github.com/mojombo/jekyll/wiki/Permalinks
 permalink:   /:categories/:title/
@@ -61,18 +61,35 @@ permalink:   /:categories/:title/
 paginate: 5
 
 kramdown:
+  input: GFM
   auto_ids: true
   footnote_nr: 1
   entity_output: as_char
   toc_levels: 1..6
-  enable_coderay: true
+  enable_coderay: false
 
-  coderay:
-    coderay_line_numbers: nil
-    coderay_line_numbers_start: 1
-    coderay_tab_width: 4
-    coderay_bold_every: 10
-    coderay_css: class
-
-include: [".htaccess"]
-exclude: ["lib", "config.rb", "Capfile", "config", "Gemfile", "Gemfile.lock", "README.md", "LICENSE", "log", "Rakefile", "Rakefile.rb", "tmp", "less", "*.sublime-project", "*.sublime-workspace", "test", "spec", "Gruntfile.js", "package.json", "node_modules", "gulpfile.js"]
+include: 
+  - .htaccess
+exclude: 
+  - "*.less"
+  - "*.sublime-project"
+  - "*.sublime-workspace"
+  - .asset-cache
+  - .bundle
+  - .jekyll-assets-cache
+  - .sass-cache
+  - CHANGELOG
+  - Capfile
+  - Gemfile
+  - Gruntfile.js
+  - LICENSE
+  - README
+  - Rakefile
+  - config
+  - gulpfile.js
+  - lib
+  - log
+  - node_modules
+  - package.json
+  - spec
+  - tmp
