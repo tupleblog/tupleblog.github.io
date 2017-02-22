@@ -1,6 +1,6 @@
 ---
 layout: post
-title: ทำความรู้จักกับ Big data ผ่านหนังสือ Dataclysm - Love, Sex, Race and Identity
+title: ทำความรู้จักกับ Big Data ผ่านหนังสือ Dataclysm - Love, Sex, Race and Identity
 author: Titipata
 description: "รีวิวหนังสือ Dataclysm - Love, Sex, Race, and Identity ข้อมูลจากโลกออนไลน์สามารถบอกอะไรเราได้บ้าง"
 image:
