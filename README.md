@@ -1,20 +1,20 @@
-# TupleBlog
+# tupleblog
 
-Repository for [tupleBlog](http://tupleblog.github.io) (in Thai) based on [Jekyll](http://jekyllrb.com/) [HPSTR](https://github.com/mmistakes/hpstr-jekyll-theme) theme.
+Repository for [tupleblog](http://tupleblog.github.io) (in Thai) based on [Jekyll](http://jekyllrb.com/) [HPSTR](https://github.com/mmistakes/hpstr-jekyll-theme) theme.
 
 ### Running the blog locally
 
 First, go to `_config.yml` then change line 9 for running locally. Then, change
-directory to the repository then do the following
+directory to the repository and then do the following
 
-  1. Download `ruby` using [Homebrew](https://brew.sh/) for Mac. For Windows, download **RubyInstaller** and
+  1. run `ruby --version` to check if there is already `ruby` on your system. If there is skip to step 3, else do step 2.
+  2. Download `ruby` using [Homebrew](https://brew.sh/) for Mac. For Windows, download **RubyInstaller** and
   **DEVELOPMENT KIT** regarding your OS architecture from [here](https://rubyinstaller.org/downloads/).
   For **RubyInstaller**, just double click and done. For **DEVELOPMENT KIT**, please follows [its instruction](https://github.com/oneclick/rubyinstaller/wiki/Development-Kit).
-  2. Update Ruby Gems to latest version `gem update --system` (see [this post](http://guides.rubygems.org/ssl-certificate-update/#installing-using-update-packages) for Windows).
-  If updating failed try running `gem update --system`.
-  3. `gem install bundler`
-  4. `bundle install` (For Windows, run `cmd` as Administrator)
-  5. `bundle exec jekyll serve` to serve the site in port 4000. You can also run
+  3. Update your installed gems to latest version `gem update`. If updating failed try running `gem update --system` to update its core (see [this post](http://guides.rubygems.org/ssl-certificate-update/#installing-using-update-packages)). 
+  4. `gem install bundler`
+  5. `bundle install` (For Windows, run `cmd` as Administrator)
+  6. `bundle exec jekyll serve` to serve the site in port 4000. You can also run
 with drafts using `bundle exec jekyll serve --drafts`
 
 
