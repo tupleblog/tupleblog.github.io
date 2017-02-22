@@ -39,7 +39,7 @@ body {
 	h1 {
 		margin: 10px 20px;
 		font-weight: 700;
-		@include font-rem(32);
+		@include font-rem(26);
 		color: lighten($base-color,20);
 		@media #{$medium} {
 			@include font-rem(48);
@@ -524,7 +524,6 @@ header .entry-meta {
 }
 // author-mobile
 // --------------------------------------------------
-
 .author-side h3 {
 	text-align: center;
 }

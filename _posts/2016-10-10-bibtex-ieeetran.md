@@ -134,7 +134,7 @@ Mendeley เป็นโปรแกรมจัดการสื่ออ้�
   journal = {American Mathematical Society},
   mendeley-groups = {abcde{\_}conf},
   pages = {1--17},
-  title = {{Short Math Guide for LATEX}},
+  title = {% raw %} {{Short Math Guide for LATEX}}, {% endraw %}
   year = {2002}
 }
 @article{Konrad2005,
@@ -147,7 +147,7 @@ Mendeley เป็นโปรแกรมจัดการสื่ออ้�
   number = {April},
   pages = {1--60},
   pmid = {19130982},
-  title = {{The abc of emg}},
+  title = {% raw %} {{The abc of emg}}, {% endraw %}
   url = {http://demotu.org/aulas/controle/ABCofEMG.pdf},
   year = {2005}
 }
