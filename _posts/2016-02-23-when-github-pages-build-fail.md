@@ -17,13 +17,13 @@ date: 2017-02-23 12:05:00
 ล่าสุดเมื่อ [@titipata](https://twitter.com/titipat_a) เขียน[บล็อกใหม่](http://tupleblog.github.io/dataclysm-big-data/)มา ก็เป็นปกติที่เราจะผลัดกัน proof reading (แต่ทำหลังจาก publish แล้วด้วยนะ อินดี้ปะ) เมื่อเสร็จสิ้นการพิสูจน์อักษรตาม [commit นี้เลย](https://github.com/tupleblog/tupleblog.github.io/commit/f12eef34b19fab3dacda8519d8080ecb86e5cc88) เราก็ได้ push ขึ้น Github ตามปกติ แล้วก็มานั่งกดรีเฟรชเบราเซอร์เพื่อรอดูความเปลี่ยนแปลงที่ควรจะเห็นได้ในครึ่งนาที... รีเฟรชไปได้ห้านาทีก็พบว่ามันยังไม่อัพเดทซะทีฟะ ก็เลยเข้าไปดูใน commit ของ tupleblog พบว่าเป็นดังภาพ
 
 <figure><center>
-  <img width="300px" src="/images/post/buildfail/commit.png" data-action="zoom"/>
+  <img width="auto" src="/images/post/buildfail/commit.png" data-action="zoom"/>
 </center></figure>
 
 จากภาพคือถ้า commit นั้น build สำเร็จจะมีเครื่องหมายถูกสีเขียวขึ้นมา แต่ commit ล่าสุดที่เราได้ push ขึ้นไปกลับไม่มี ก็เลยต้องรีบไปล็อกอินแอคเคาท์ของ tupleblog เพื่อเช็ครายละเอียดอีกทีซึ่งก็พบว่า
 
 <figure><center>
-  <img width="300px" src="/images/post/buildfail/error.png" data-action="zoom"/>
+  <img width="auto" src="/images/post/buildfail/error.png" data-action="zoom"/>
 </center></figure>
 
 มาถึงตรงนี้ก็งงไปครับ ลอง push ขึ้นไปอีกหนึ่ง commit โดยใส่ความเปลี่ยนแปลงแค่ 1 เว้นวรรค ก็ไม่ช่วยอะไร ก็เลยติดต่อ [@titipata](https://twitter.com/titipat_a) ให้ลองรันบนแมคหน่อย.. (เอ้อ ลืมพูดถึงไปเลย ล่าสุดนี่คือเรารัน local บนวินโดว์ ซึ่งกว่าจะทำให้รันได้ก็เสียเวลาไปเป็นวันเหมือนกัน ฮ่าา) พอลองรันก็พบว่าบนแมคไม่สามารถรันได้ โดยมีปัญหากับ `gem` ชื่อ `json` ขึ้น error มาให้งงงวยเล่นๆ ด้วย แบบนี้
@@ -60,7 +60,7 @@ gem update --system
 โชะ รันได้แล้ววว เป็นความรู้สึกปิติยินดีระดับหนึ่งเลยก็ว่าได้ แล้วก็มานึกออกอีกว่า งั้นสถานะปัจจุบันก็เหมือนบนวินโดว์แล้วดิ รัน local ได้ แต่ push แล้ว fail เลยกลับไปทบทวน commit แรกที่ทำให้ build ไม่ได้อีกครั้งว่าแก้อะไรไปบ้าง จะได้ลองแก้กลับมาเผื่อมันจะ build ผ่านเหมือนตอนก่อนเจ๊ง พบว่า commit นั้นแก้ไป 4 ไฟล์ ย่อรูปไฟล์นึง อันนี้ไม่น่าเกี่ยว, ปรับขนาดอักษรของหัวเรื่องสำหรับเบราเซอร์ในมือถือ อันนี้ก็ไม่น่าใช่, พิสูจน์อักษรโพสต์ของ [@titipata](https://twitter.com/titipat_a) ก็ไม่น่าใช่อีกอะ สุดท้ายคือแก้ warning บล็อกเก่าของตัวเองโดยการใส่ลิควิดแท็ก `{% raw %}{% raw %}{% endraw %}` เข้าไป อันนี้ดูจะมีแววสุด เลยมุ่งไปที่ไฟล์ของบล็อกนี้ แต่ยังไม่ทันจะได้แก้ [@titipata](https://twitter.com/titipat_a) ก็ทักมาบอกว่าคลีน `readme` ไปแล้วนะ push ไปแล้วด้วย ไอเราก็เอออเคๆ แต่มันจะ build ได้หรอวะ ก็ยังไม่ได้แก้อะไรใน commit ที่ทำให้ build ไม่ได้เลย แล้วก็กดเข้าไปดูในหน้า repo ของ tupleblog
 
 <figure><center>
-  <img width="300px" src="/images/post/buildfail/buildpass.jpg" data-action="zoom"/>
+  <img width="auto" src="/images/post/buildfail/buildpass.jpg" data-action="zoom"/>
 </center></figure>
  
  ...... อึ้งครับ
@@ -68,7 +68,7 @@ gem update --system
  ขออีกที
 
  <figure><center>
-  <img width="300px" src="/images/post/buildfail/buildpass-zoom.jpg" data-action="zoom"/>
+  <img width="auto" src="/images/post/buildfail/buildpass-zoom.JPG" data-action="zoom"/>
 </center></figure>
 
 โอเค ผ่านก็ผ่าน ดีละ ปล่อยให้มันเป็นปริศนาต่อไป นอนดีกว่า
