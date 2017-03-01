@@ -1,0 +1,14 @@
+/* FONT PATH
+ * -------------------------- */
+
+@font-face {
+  font-family: 'robotomono-regular';
+  src: url('#{$fa-font-path}/robotomono-regular-webfont.eot?v=#{$fa-version}');
+  src: url('#{$fa-font-path}/robotomono-regular-webfont.eot?#iefix&v=#{$fa-version}') format('embedded-opentype'),
+    url('#{$fa-font-path}/robotomono-regular-webfont.woff?v=#{$fa-version}') format('woff'),
+    url('#{$fa-font-path}/robotomono-regular-webfont.ttf?v=#{$fa-version}') format('truetype'),
+    url('#{$fa-font-path}/robotomono-regular-webfont.svg?v=#{$fa-version}#robotomono-regular') format('svg');
+  //src: url('#{$fa-font-path}/FontAwesome.otf') format('opentype'); // used when developing fonts
+  font-weight: normal;
+  font-style: normal;
+}
