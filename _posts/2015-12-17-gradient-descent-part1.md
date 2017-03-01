@@ -61,7 +61,7 @@ $$x_{k+1} = x_{k} - \alpha f'(x_{k}) $$
 
 ใครมี Python ก็ลองแก้หาค่า \\( x \\) ที่ทำให้ \\(f(x) = x^2 - 4x\\) มีค่าต่ำที่สุดได้เลย ส่วนโค้ดสำหรับ Gradient Descent ง่ายๆเป็นไปตามข้างล่างเลย
 
-{% highlight python %}
+```python
 x = 10 # initial x
 n_iter = 1000 # number of iteration
 alpha = 0.02
@@ -83,7 +83,7 @@ print 'final cost = %s' % J[-1]
 --------------------------------
 final x = 2.0
 final cost = -4.0
-{% endhighlight %}
+```
 
 
 คำตอบของการใช้ gradient descent algorithm ได้เหมือนกับเราแก้โดยใช้มือเป๊ะเลย
@@ -109,7 +109,7 @@ $$\Theta_{k+1} = \Theta_{k} - \alpha \nabla J(\Theta) $$
 </center></figure>
 
 
-{% highlight python %}
+```python
 import numpy as np
 
 def compute_grad(X, y, theta):
@@ -142,7 +142,7 @@ print 'final cost = %s' % J[-1]
 --------------------------------
 final theta = [ 0.0118  1.4984]
 final cost = 56.7869030526
-{% endhighlight %}
+```
 
 
 จากข้างบน ถ้าเราพล้อตเส้นตรงที่อธิบาย data ที่เรามีดีที่สุด เราก็จะพบว่าจุดตัดแกนมีค่าประมาณ 0.0118 และความชันหรือ slope มีค่าเท่ากับ 1.4984 นั่นเอง ลองไปดู gif file ว่าแต่ละ iteration เกิดอะไรขึ้นบ้าง  ได้โดย [คลิ้กที่นี่](https://raw.githubusercontent.com/mattnedrich/GradientDescentExample/master/gradient_descent_example.gif) เลย เรายังไม่ได้ลองเอา data ชุดเดียวกันไปใส่ใน Excel แต่คิดว่าก็จะได้ค่าเท่ากัน จากตอนนี้ เราสามารถแก้สมการ \\( \lVert \Theta^T \mathbf{x} - y \rVert^2 \\) โดยที่ \\( \Theta \\) อาจจะมีขนาดเกินกว่าแค่ \\( \Theta = [\theta_1, \theta_2]^T \\) ก็ได้ เช่น \\( \Theta = [\theta_1, \theta_2, ... \theta_m]^T \\)
@@ -156,7 +156,7 @@ final cost = 56.7869030526
 
 ตัวอย่างข้างล่างเราแค่สุ่ม data เพียง 20 ตัวเพื่อใช้ในการอัพเดทของเรา (ใช้ฟังค์ชันเดียวร่วมกับข้างบน) แต่สุดท้ายคำตอบที่ได้ มี cost น้อยกว่าที่เราใช้ gradient descent ปกติซะอีก และถ้าใครลองเขียนดูตามด้านล่าง จะเห็นได้ว่า SGD เร็วกว่าอีกด้วยหล่ะ
 
-{% highlight python %}
+```python
 def sample(X, y, n_sample=20):
     idx_sample = np.random.randint(m,size=n_sample)
     return X[idx_sample], y[idx_sample]
@@ -174,7 +174,7 @@ print 'final cost = %s' % J[-1]
 --------------------------------
 final theta = [ 0.0656  1.4715]
 final cost = 56.3702935651
-{% endhighlight %}
+```
 
 
 ## ทฤษฎีทิ้งทาย

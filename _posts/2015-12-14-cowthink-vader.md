@@ -18,24 +18,24 @@ date: 2015-12-14 17:00:00
 
 โอเค เราเริ่มต้นจากเปิด terminal (App > others > terminal) และโหลด package management system สำหรับ Mac OSX ซึ่งเราแนะนำให้ใช้ [Homebrew](http://brew.sh/) (จริงๆ มีอีกมากมายให้เลือก เช่น MacPorts เป็นต้น) วิธีโหลด Homebrew นั้นก็ไม่ยากเลย แค่พิมพ์ตามข้างล่างนี้บน terminal
 
-{% highlight bash %}
+```bash
 $ ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 $ brew install cowsay
 $ brew install fortune
-{% endhighlight %}
+```
 
 โดย cowsay เราจะสามารถพิมพ์รูปวัวพูดหรือคิดบน terminal ได้ ส่วน fortune จะดึงวลีอย่างสุ่มขึ้นมา โดยเราสามารถเปลี่ยนรูปวัวเป็นรูปอื่นๆ ได้ ในที่นี้เราจะเปลี่ยนให้มันเป็ Cowth Vader (Darth Vader) โดยเราสามารถใส่ flag `-f vader` เข้าไป
 
-{% highlight bash %}
+```bash
 $ fortune | cowthink -f vader
-{% endhighlight %}
+```
 
 <figure><center>
   <img width="400" src="/images/post/vader/cowth.jpg" data-action="zoom"/>
 </center></figure>
 
 จริงๆ ใครที่อยากได้รูปแบบอื่นๆ cowthink ก็ยังมีอีกหลายแบบให้เลือก ลองพิมพ์
-{% highlight bash %}
+```bash
 $ cowsay -l
 beavis.zen bong bud-frogs bunny cheese cower daemon default dragon
 dragon-and-cow elephant elephant-in-snake eyes flaming-sheep ghostbusters
@@ -43,12 +43,12 @@ head-in hellokitty kiss kitty koala kosh luke-koala meow milk moofasa moose
 mutilated ren satanic sheep skeleton small sodomized stegosaurus stimpy
 supermilker surgery telebears three-eyes turkey turtle tux udder vader
 vader-koala www
-{% endhighlight %}
+```
 
 เท่านี้ เราแค่เอา `fortune | cowthink -f vader` ไปใส่ในไฟล์ `.bash_profile` ทุกครั้งที่เปิด terminal ก็จะมี Cowth Vader โผล่มาพร้อมกับประโยคแบบสุ่มแล้ว ยังไม่หมดเท่านั้น เรายังสามารถดูสตาร์วอร์ภาค 4 The New Hope ได้จาก terminal เช่นกัน ลองพิมพ์ตามข้างล่างบน terminal เพื่อดูสตาร์วอร์กัน
 
-{% highlight bash %}
+```bash
 telnet towel.blinkenlights.nl
-{% endhighlight %}
+```
 
 ลองเพียงแค่สองอย่างนี้ พลังก็จะสถิตอยู่กับท่านแล้วหล่ะ

@@ -70,7 +70,7 @@ date: 2015-12-14 12:00:00
 
 เสร็จละ เริ่มเขียน LaTeX บน Atom ได้ เฮ~ เนื้อหาหลักมีนิดเดียวเองไม่เห็นจะยากตรงไหน มาลองเขียนเลยดีกว่า เปิดไฟล์ใหม่ขึ้นมาตั้งชื่ออะไรก็ได้แต่ลงท้ายด้วย `.tex` เสร็จปั๊บก็ลองคำสั่งพื้นฐานทั่วไปประมาณนี้
 
-{% highlight tex %}
+```tex
 \documentclass[a4paper]{article}
 
 \begin{document}
@@ -82,7 +82,7 @@ date: 2015-12-14 12:00:00
   \underline{underline} to \textsc{smallcaps} or \emph{emphasize}
 
 \end{document}
-{% endhighlight %}
+```
 
 ทีนี้มาลองพรีวิวกันเลยดีกว่า กด `ctrl` `alt` `b` ปุ๊บก็น่าจะเจอหน้าตาดังนี้
 

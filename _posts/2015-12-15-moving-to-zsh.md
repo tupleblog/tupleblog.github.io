@@ -42,7 +42,7 @@ date: 2015-12-15 12:00:00
 - **youtube-dl -** อันนี้แถม เป็น command line app เขียนด้วย python ไว้โหลด youtube (ไม่ควรเผยแพร่ไฟล์ที่โหลดมาไม่ว่ากรณีใดๆ นะ)
 
 ### Installation
-{% highlight bash %}
+```bash
 brew install zsh # Zsh
 sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)" # Oh-My-Zsh
 brew install tmux # tmux
@@ -50,7 +50,7 @@ brew install reattach-to-user-namespace # tmux patch
 brew install vim # editor
 curl http://j.mp/spf13-vim3 -L -o - | sh # spf13
 brew install youtube-dl # add-on
-{% endhighlight %}
+```
 
 # การปรับแต่ง
 หลักๆ แล้วไฟล์ที่จะต้องใช้ในการปรับแต่งก็จะอยู่ใน home directory ( `~` ) หลักๆ ที่เราใช้ก็มีสามอันนี้
@@ -64,18 +64,18 @@ brew install youtube-dl # add-on
 
 สรุปก็คือ ใน `.zshrc` เราทำแค่สองอย่างคือใส่[ปลั๊กอิน](https://github.com/robbyrussell/oh-my-zsh/wiki/Plugins)ของ **Oh-My-Zsh** แล้วก็ `source` ไฟล์ดอท (dot file)
 
-{% highlight bash %}
+```bash
 # ประมาณบรรทัดที่ 52 เราใช้สามอันนี้ อยากใส่อะไรก็ลองไปอ่านดูนะ แปะลิงค์ไว้ตรงคำว่าปลั๊กอิน
 plugins=(web-search chucknorris tmuxinator)
 
 # ที่ท้ายสุดของไฟล์ จะให้ source ไฟล์ดอทของเรา
 source ~/.custom-bash
-{% endhighlight %}
+```
 
 ### `.custom-bash`
 อันนี้เป็นคอลเล็กชันของเราเอง ก็ตัดๆ ออกไปบ้าง เหลือไว้แค่บางอันเพราะมันไร้สาระเกิน
 
-{% highlight bash %}
+```bash
 # Export
 export PATH="/usr/local/bin:$PATH"
 export EDITOR='vim'
@@ -125,7 +125,7 @@ trimmer() {
 }
 
 ##########
-{% endhighlight %}
+```
 
 ### `.tmux.conf`
 สุดท้ายเป็นการตั้งค่า tmux ซึ่งใครไม่ได้ลงก็ไม่ต้องสนใจตรงนี้เลยก็ได้ โดยปกติ tmux จะต้องกดคีย์ผสมโดยจะมีปุ่มนำที่เรียกว่า prefix แล้วก็ปุ่มตามเป็นคำสั่ง ซึ่งค่าเริ่มต้นมันต้องกด `C-b` หรือ `control-b` แต่ขี้เกียจกดสองปุ่มไง ก็เลยย้ายไปไว้ที่ปุ่ม <code>`</code> แต่จริงๆ แล้วเราจะตั้งเป็นอะไรก็ได้ ไม่ได้มีข้อจำกัดอะไร ใครถนัดอะไรก็ตั้งตามนั้นได้โลด
@@ -140,7 +140,7 @@ trimmer() {
 - [Increased Developer Productivity with Tmux, Part 2: ~/.tmux.conf](http://minimul.com/increased-developer-productivity-with-tmux-part-2.html)
 - [TMUX – The Terminal Multiplexer (Part 2)](http://blog.hawkhost.com/2010/07/02/tmux-%E2%80%93-the-terminal-multiplexer-part-2/)
 
-{% highlight bash %}
+```bash
 ## BASIC STUFFS
 # use zsh as default shell
 set-option -g default-shell /bin/zsh
@@ -197,7 +197,7 @@ bind ] run "reattach-to-user-namespace pbpaste | tmux load-buffer - && tmux past
 
 # Kill session
 bind k confirm-before -p "kill-session #S? (y/n)" kill-session
-{% endhighlight %}
+```
 
 # สรุป
 ก็หมดละสำหรับการตั้งค่าของเรา ซึ่งอันนี้เป็นเวอร์ชันเมื่อสามเดือนก่อนแล้วก็มีตัดๆ อะไรบางอย่างทิ้งไปบ้าง แต่ก็น่าจะยังใช้ได้เหมือนเดิม ถ้ามีอะไรจะแนะนำหรือแลกเปลี่ยนก็ทิ้งคอมเม้นต์ไว้ได้นะครับ สุดท้ายนี้ขอฝาก [Gist ของ `youtube-dl`](https://gist.github.com/bluenex/40496729bc721d7b4be0) ไว้หน่อยเผื่อจะมีประโยชน์ (ล่ะมั้ง) :p

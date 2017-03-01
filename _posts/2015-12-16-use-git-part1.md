@@ -38,10 +38,10 @@ date: 2015-12-16 15:30:00
 
 สิ่งที่ต้องทำต่อมาคือการระบุตัวตนโดยเราจะต้องใส่ชื่อกับอีเมล์ของเราให้ git จำไว้ เพื่อเวลาที่มีการแก้ไขจะได้รู้ว่าใครเป็นคนแก้ไข โดยอีเมล์แนะนำให้ใช้อันเดียวกับที่สมัคร GitHub ส่วนชื่อก็อะไรก็ได้ เหมือน username บน GitHub ก็ดี
 
-{% highlight bash %}
+```bash
 $ git config --global user.name "Your Name"
 $ git config --global user.email yourEmail@example.com
-{% endhighlight %}
+```
 
 พูดถึง GitHub ถ้ายังไม่มีแอคเคาท์ก็ไปสมัครไว้ก่อนเลยนะ ที่นี่เลย [https://github.com/join](https://github.com/join)
 
@@ -57,7 +57,7 @@ $ git config --global user.email yourEmail@example.com
 - `touch` สร้างไฟล์ใหม่
 
 เอ้า ตัวอย่างมา.. (อ้อ บรรทัดที่มี `$` นำหน้า คือ input ที่เราพิมพ์ลงไป ส่วนที่ไม่มีก็คือ output นะ)
-{% highlight bash %}
+```bash
 $ pwd
 /Users/username
 $ ls
@@ -74,7 +74,7 @@ $ cd gitrepo
 $ touch readme.md
 $ ls
 readme.md
-{% endhighlight %}
+```
 
 ก็ประมาณนี้ ตอนนี้เราก็ได้สร้างไฟล์ `readme.md` ไว้ในโฟลเดอร์ชื่อ `gitrepo` แล้ว อันนี้จำไว้ด้วยนะว่าอยู่ไหน ถ้ารู้สึกว่ายังไม่คุ้นเคยที่จะทำทุกอย่างผ่าน CLI ก็เปิดโฟลเดอร์ `gitrepo` ที่ได้สร้างไว้ขึ้นมาเลย
 
@@ -104,7 +104,7 @@ readme.md
 ก็เปิด terminal ขึ้นมา แล้วเริ่มตามนี้เลย
 
 #### init local repo & add remote repo
-{% highlight bash %}
+```bash
 # เข้าไปในโฟลเดอร์ gitrepo
 $ cd gitrepo
 
@@ -129,10 +129,10 @@ $ git remote add origin https://github.com/bluenex/gitrepo.git
 $ git remote -v
 origin  https://github.com/bluenex/gitrepo.git (fetch)
 origin  https://github.com/bluenex/gitrepo.git (push)
-{% endhighlight %}
+```
 
 #### check status
-{% highlight bash %}
+```bash
 # คำสั่งตรวจสอบ status ของ repo เราจะใช้เพื่อตรวจสอบว่ามีอะไรเปลี่ยนแปลง
 # บ้างมั้ยใน repo ของเรา ถ้ามีเกิดความเปลี่ยนแปลงอะไรขึ้นบ้าง กับไฟล์ไหนบ้างเป็นต้น
 $ git status
@@ -148,10 +148,10 @@ Untracked files:
         readme.md
 
 nothing added to commit but untracked files present (use "git add" to track)
-{% endhighlight %}
+```
 
 #### stage files & check status
-{% highlight bash %}
+```bash
 # ดังนั้นเราจะมาติดตามมันด้วยคำสั่ง add โดยในที่นี้เราใช้ . แทนชื่อไฟล์ โดย .
 # หมายถึงทุกไฟล์ในโฟลเดอร์ gitrepo นั่นเอง
 $ git add .
@@ -166,20 +166,20 @@ Changes to be committed:
 
 # โดยการเปลี่ยนแปลงนี้คือการสร้างไฟล์ใหม่ขึ้นมา ชื่อ readme.md
         new file:   readme.md
-{% endhighlight %}
+```
 
 #### commit staged files
-{% highlight bash %}
+```bash
 # การ commit คือการบันทึกความเปลี่ยนแปลงเข้าสู่ repo ของเรา เป็นการย้าย
 # จาก staging state ไปยัง repository state นั่นเอง
 $ git commit -m "initial commit"
 [master (root-commit) 8eec696] initial commit
 1 file changed, 0 insertions(+), 0 deletions(-)
  create mode 100644 readme.md
-{% endhighlight %}
+```
 
 #### check commits log
-{% highlight bash %}
+```bash
 # เราสามารถตรวจสอบ commit ที่เกิดขึ้นใน repo ได้ด้วยคำสั่ง log
 $ git log
 
@@ -190,11 +190,11 @@ Date:   Wed Dec 16 11:38:54 2015 +0900
 
     initial commit
 (END)
-{% endhighlight %}
+```
 
 เอาล่ะ มาถึงตรงนี้เราก็ได้มา commit นึงแล้ว จากนี้เราจะทำการ push จาก local ขึ้นไปยัง remote repo โดยการ push เบื้องต้นเราต้องกำหนดว่าเราจะ push ไปที่ไหน (ในที่นี้คือ origin ให้คิดว่าเรากำหนดให้ remote repo คือ original copy และในเครื่องของเราก็มี local copy อยู่ด้วย) และ push ไป branch อะไร (ในที่นี้คือ master)
 
-{% highlight bash %}
+```bash
 $ git push origin master
 # กรอก username กับ password
 Username for 'https://github.com':
@@ -204,7 +204,7 @@ Writing objects: 100% (3/3), 212 bytes | 0 bytes/s, done.
 Total 3 (delta 0), reused 0 (delta 0)
 To https://github.com/bluenex/gitrepo.git
  * [new branch]      master -> master
-{% endhighlight %}
+```
 
 เราจะเห็นได้ว่าการ push ทุกครั้งนั้นเราจะต้องกรอก username และ password ซึ่งก็เป็นรูปแบบการรักษาความปลอดภัยผ่านโปรโตคอล `HTTPS` ถ้าเริ่มเบื่อที่จะกรอกแล้วก็แนะนำให้ไปทำความรู้จักกับ `SSH` หรือ [Secure Shell สำหรับ GitHub](https://help.github.com/articles/generating-ssh-keys/) ซึ่งจะใช้รูปแบบอื่นในการรักษาความปลอดภัย
 
@@ -218,7 +218,7 @@ To https://github.com/bluenex/gitrepo.git
 
 เอาล่ะคราวนี้เราจะ clone repo นี้มาไว้ที่เครื่องเรา แต่ไม่ใช่ที่เดิม เป็นเหมือนการจำลองว่าเรา clone ไปในอีกเครื่องนึงนะ โดยเราจะ clone ไปไว้ใน dir เดียวกับที่โฟลเดอร์ `gitrepo` ของเราอยู่นั่นแหละ แต่ใช้ชื่อว่า `another_pc_gitrepo` ไปที่ terminal เลย
 
-{% highlight bash %}
+```bash
 # ก่อนอื่นก็เช็คก่อนว่าเราอยู่ที่ dir ไหน
 $ pwd
 /Users/username/gitrepo
@@ -238,19 +238,19 @@ Checking connectivity... done.
 $ ls
 Desktop    Documents    Downloads    gitrepo    another_pc_gitrepo
 $ cd another_pc_gitrepo
-{% endhighlight %}
+```
 
 โอเค ตอนนี้เราย้ายมาอยู่ใน `another_pc_gitrepo` กันแล้ว เราจะมาลองแก้ไฟล์กัน เปิดไฟล์ `readme.md` ที่อยู่ในโฟลเดอร์ `another_pc_gitrepo` ขึ้นมา ใช้โปรแกรมอะไรก็ได้เช่น Notepad, TextEdit หรือจะ Gedit ก็ได้หมด เราจะลองสร้างความเปลี่ยนแปลงให้มันกัน
-{% highlight html %}
+```html
 <!-- in readme.md file -->
 # Hello
 Hello, it's me, I was wondering...
 
 สวัสดี นี่คือไฟล์ `readme.md` ที่ได้ถูกแก้ไขจากโฟลเดอร์ `another_pc_gitrepo`
-{% endhighlight %}
+```
 
 เสร็จแล้วก็เซฟแล้วกลับไปที่ terminal คราวนี้เราจะติดตาม, บันทึกความเปลี่ยนแปลงแล้วก็ push มันกลับไปที่ repo อีกครั้ง
-{% highlight bash %}
+```bash
 # ตรวจสอบ status ก่อน
 $ git status
 On branch master
@@ -288,7 +288,7 @@ Writing objects: 100% (3/3), 412 bytes | 0 bytes/s, done.
 Total 3 (delta 0), reused 0 (delta 0)
 To https://github.com/bluenex/gitrepo.git
    8eec696..fc8d069  master -> master
-{% endhighlight %}
+```
 
 ถึงตรงนี้เราก็กลับไปดูที่ GitHub อีกครั้ง กดรีเฟรชแล้วคุณก็จะพบกับ...
 
@@ -298,7 +298,7 @@ To https://github.com/bluenex/gitrepo.git
 
 นั่นล่ะครับท่านผู้ชม ไฟล์ที่ถูกแก้ใน `another_pc_gitrepo` ได้ถูก push ไปยัง remote repo แล้ว คำถามต่อไป แล้ว `gitrepo` อันแรกล่ะ? นั่นน่ะสิ ไปลองดูกันเถอะ
 
-{% highlight bash %}
+```bash
 # ออกจาก `another_pc_gitrepo` ก่อน
 $ cd ..
 $ cd gitrepo
@@ -317,21 +317,21 @@ $ git log origin/master --oneline
 fc8d069 from another_pc_gitrepo
 8eec696 initial commit
 (END)
-{% endhighlight %}
+```
 
 จะเห็นได้ว่ามี commit เพิ่มขึ้นมาหนึ่งอันจาก `another_pc_gitrepo` ที่เราแก้เมื่อกี้นี่เอง แต่ fetch แล้วมันยังไม่รวมร่างกันนะ ไม่เชื่อลองไปเปิดไฟล์ `gitrepo/readme.md` ดูก็ได้ คราวนี้เราจะมารวมความเปลี่ยนแปลงที่เกิดขึ้นเข้ากับไฟล์ใน `gitrepo` นี้กัน
 
-{% highlight bash %}
+```bash
 $ git merge origin/master
 Updating 8eec696..fc8d069
 Fast-forward
  readme.md | 4 ++++
  1 file changed, 4 insertions(+)
-{% endhighlight %}
+```
 
 เรียบร้อย ทีนี้ลองเปิดไฟล์อีกรอบได้ ก็จะเห็นว่าไฟล์ `gitrepo/readme.md` ของเราได้รับความเปลี่ยนแปลงจาก `another_pc_gitrepo/readme.md` แล้ว เฮ~ แต่เรายังเหลืออีกคำสั่งที่ยังไม่ได้ใช้นั่นก็คือ `git pull` มาลองใช้กันแบบเร็วๆ เลย ก่อนอื่นก็ไปแก้ `gitrepo/readme.md` ก่อน
 
-{% highlight html %}
+```html
 <!-- in readme.md file -->
 # Hello
 Hello, it's me, I was wondering...
@@ -339,10 +339,10 @@ Hello, it's me, I was wondering...
 สวัสดี นี่คือไฟล์ `readme.md` ที่ได้ถูกแก้ไขจากโฟลเดอร์ `another_pc_gitrepo`
 
 ส่วนบรรทัดนี้ได้ถูกแก้ไขจากโฟลเดอร์ `gitrepo`
-{% endhighlight %}
+```
 
 เสร็จแล้วก็ไปที่ terminal กัน
-{% highlight bash %}
+```bash
 # check status
 $ git status
 On branch master
@@ -385,7 +385,7 @@ Updating fc8d069..bc4c7e2
 Fast-forward
  readme.md | 2 ++
  1 file changed, 2 insertions(+)
-{% endhighlight %}
+```
 
 จากการ `pull` เราจะเห็นความแตกต่างก็คือ `pull` นั้นดึงความเปลี่ยนแปลงจาก remote มาแล้วทำการรวมเข้าด้วยกันกับ repo ที่อยู่ในเคร่ืองของเราเลย หรือเทียบเท่ากับ `fetch` + `merge` นั่นเอง
 
