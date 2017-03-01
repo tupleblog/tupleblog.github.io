@@ -5,7 +5,7 @@ author: panyavee
 description: "my first playlist for this year, hope you guys enjoy them"
 image:
   feature: post/panyavee/panyavee_art.jpg
-tags: [music, indie, playlist]
+tags: [Music, Indie, Playlist]
 comments: true
 date: 2015-12-19 3:00:00
 ---

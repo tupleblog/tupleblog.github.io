@@ -5,7 +5,7 @@ author: Titipata
 description: "รวมเพลงเก่าๆที่เราและเพื่อนๆฟังสมัยมัธยม"
 image:
   feature: post/fbsong/music-2015.jpg
-tags: [music, indie]
+tags: [Music, Indie]
 comments: true
 date: 2016-08-12 10:40:00
 ---

@@ -7,7 +7,7 @@ image:
   feature: post/tensorflow/blogimg-tensorflow.jpg
   credit: wired.com
   creditlink: http://www.wired.com/wp-content/uploads/2015/11/google-tensor-flow-logo-F-1200x630.jpg
-tags: [machine learning, tensorflow, google]
+tags: [Machine Learning, Tensorflow, Google]
 comments: true
 ---
 

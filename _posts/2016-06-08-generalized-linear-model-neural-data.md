@@ -3,7 +3,7 @@ author: Titipata
 layout: post
 title: Generalized Linear Model, Neuroscience perspective
 description: A summarize lecture of Generalized Linear Model Lecture by prof. Sara Solla at Northwestern University
-tags: [Machine Learning, Neural data, GLM]
+tags: [Machine Learning, Neural Data, GLM]
 image:
   feature: post/glm/neural_activity.png
 comments: true

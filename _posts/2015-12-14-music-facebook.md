@@ -5,7 +5,7 @@ author: Titipata
 description: "โพสต์เพลงไปเยอะมากๆ เลยอยากเอามารวมในบล็อกละกัน"
 image:
   feature: post/fbsong/music-2015.jpg
-tags: [music, indie]
+tags: [Music, Indie]
 comments: true
 date: 2015-12-14 10:40:00
 ---

@@ -3,7 +3,7 @@ author: tulakann
 layout: post
 title: โลกในอีกสองปีข้างหน้าจะโดนดาวเคราะห์น้อยพุ่งชนหรือไม่?
 description: "ดาวเคราะห์น้อย 2012 TC4 เป็นหนึ่งในดาวเคราะห์น้อยที่มีโอกาสพุ่งชนโลกสูงสุดซึ่งอาจเกิดขึ้นในปี 2017 มันจะเกิดขึ้นหรือไม่ และเราจะสามารถป้องกันได้หรือไม่..."
-tags: [asteroid, astronomy]
+tags: [Asteroid, Astronomy]
 image:
   feature: post/asteroid/blogimg-willasteroid.jpg
   credit: astrowatch.net

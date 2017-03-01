@@ -5,7 +5,7 @@ author: Titipata
 description: รวมอะคูสติกเซสชั่นที่ฟังสมัยก่อน
 image:
   feature: post/holiday/zoo-light.jpg
-tags: [music, indie]
+tags: [Music, Indie]
 comments: true
 date: 2016-09-04 12:34:00
 ---

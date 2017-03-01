@@ -3,7 +3,7 @@ author: tulakann
 layout: post
 title: "[geek] บันทึกการย้ายมาสู่ Zsh"
 description: "จาก bash สู่ Zsh อยากย้ายก็ย้ายดื้อๆ"
-tags: [zsh, terminal, bash, oh-my-zsh, geek]
+tags: [Zsh, Terminal, Bash, Oh-my-zsh, Geek]
 image:
   feature: post/zsh/blog-zsh.jpg
 comments: true

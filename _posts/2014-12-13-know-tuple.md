@@ -4,7 +4,7 @@ title: ทำความรู้จักกับ tuple blog
 author: Titipata
 description: "ว่าด้วยที่มาที่ไปของทูเปิลบล็อก"
 modified: 2014-12-13
-tags: [general]
+tags: [General]
 comments: false
 ---
 

@@ -7,7 +7,7 @@ image:
   feature: post/evo/evolution-of-man.jpg
   credit: genius.com
   creditlink: https://s3.amazonaws.com/rapgenius/funny-evolution-of-man-comic-pics.jpg
-tags: [evolution, technology, human]
+tags: [Evolution, Technology, Human]
 comments: true
 ---
 

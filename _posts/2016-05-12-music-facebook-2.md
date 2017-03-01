@@ -5,7 +5,7 @@ author: Titipata
 description: "วงเก่าเพลงใหม่ วงใหม่เพลงใหม่ แล้วก็เพลงที่ชอบ"
 image:
   feature: post/fbsong/music-2015.jpg
-tags: [music, indie]
+tags: [Music, Indie]
 comments: true
 date: 2016-05-12 10:40:00
 ---

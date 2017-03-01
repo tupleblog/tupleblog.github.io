@@ -3,7 +3,7 @@ author: tulakann
 layout: post
 title: บันทึกการใช้คลาส IEEEtran บน LaTeX สำหรับ IEEE conference paper [1]
 description: "การเขียนครั้งนี้รู้สึกว่าเปิดกูเกิลไปเยอะมาก ซึ่งก็ได้รวบรวมลงบุคมาร์คไปเรียบร้อย แต่มันก็คงจะดีกว่าถ้าเอามาเขียนรวมๆ กันในที่เดียว"
-tags: [LaTeX, IEEE, conference, paper]
+tags: [Latex, IEEE, Conference, Paper]
 image:
   feature: post/latexieee/feature.jpg
   credit: IEEE

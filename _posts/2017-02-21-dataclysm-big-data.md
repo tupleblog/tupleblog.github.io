@@ -5,7 +5,7 @@ author: Titipata
 description: "รีวิวหนังสือ Dataclysm - Love, Sex, Race, and Identity ข้อมูลจากโลกออนไลน์สามารถบอกอะไรเราได้บ้าง"
 image:
   feature: post/dataclysm/dataclysm.jpg
-tags: [data, big-data, data-science]
+tags: [Data, Big Data, Data Science]
 comments: true
 date: 2017-02-21 17:07:00
 ---
@@ -98,4 +98,3 @@ impression ที่เค้าเจอกันในโลกความจ
 ## ทิ้งท้าย
 
 สำหรับใครที่สนใจรายละเอียดเต็มๆ ก็ไปหาอ่านกันได้จากหนังสือ Dataclysm ซึ่งเราคิดว่าเป็นหนังสือที่ดีมากๆ สำหรับคนที่อยากจะได้แนวคิด มุมมองใหม่ๆ จากการเก็บและวิเคราะห์ data ส่วนช่องทางการซื้อก็สามารถหาได้จาก Amazon หรือ Kinokuniya ส่วนถ้าใครอ่านแล้วไม่อยากซื้อหนังสือก็สามารถหาอ่านเพิ่มเติมจากบล็อกของ OkCupid ได้ที่ [OkCupid Blog](https://theblog.okcupid.com/) นะครับ
-

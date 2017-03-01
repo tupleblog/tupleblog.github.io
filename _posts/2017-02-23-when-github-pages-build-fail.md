@@ -5,7 +5,7 @@ author: tulakann
 description: "บางทีก็อยากจะเชื่อเหมือนกันว่าไสยศาสตร์มีจริง โดยเฉพาะไสยศาสตร์ทางโปรแกรมมิ่ง :p"
 image:
   feature:
-tags: [github, jekyll, note]
+tags: [Github, Jekyll, Note]
 comments: true
 date: 2017-02-23 12:05:00
 ---

@@ -3,7 +3,7 @@ author: tulakann
 layout: post
 title: มาเริ่มใช้ Git กัน [part 1]
 description: "จะว่าสอนก็ไม่ใช่ เรียกว่านำทางละกัน ใครยังไม่เคยใช้มาใช้กันเถอะ"
-tags: [git, github, tutorial, guide, newbie]
+tags: [Git, Github, Tutorial, Guide, Newbie]
 image:
   feature: post/usegit/blogcover.jpg
 comments: true

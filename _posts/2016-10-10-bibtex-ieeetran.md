@@ -3,7 +3,7 @@ author: tulakann
 layout: post
 title: บันทึกการใช้คลาส IEEEtran บน LaTeX สำหรับ IEEE conference paper [2]
 description: "ต่อจากบล็อกที่แล้ว ว่าด้วยเรื่องการอ้างอิงในเปเปอร์โดยใช้ BibTeX"
-tags: [LaTeX, IEEE, conference, paper]
+tags: [Latex, IEEE, Conference, Paper]
 image:
   feature: post/latexieee/featurebst.jpg
   credit: IEEE

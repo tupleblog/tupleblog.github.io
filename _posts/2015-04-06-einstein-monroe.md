@@ -3,7 +3,7 @@ layout: post
 title: เห็น มาริลิน มอนโร หรือ อัลเบิร์ต ไอน์สไตน์ วัดว่าคุณควรตัดแว่นหรือยัง
 author: Titipata
 description: "Visual Illusion จากภาพของอัลเบิร์ต ไอน์สไตน์ รวมกับมาริลิน มอนโร วัดว่าคุณสายตาดีแค่ไหน..."
-tags: [visual, illusion, eyesight]
+tags: [Visual, Illusion, Eyesight]
 comments: true
 ---
 

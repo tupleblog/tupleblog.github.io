@@ -3,7 +3,7 @@ author: tulakann
 layout: post
 title: Github Pages ยกเครื่องใหม่ เร็วขึ้นด้วย Jekyll 3.0
 description: "เมื่อเร็วๆ นี้ Github ได้โพสต์บล็อกกล่าวถึงการอัพเกรดเครื่องในมาใช้ Jekyll 3.0 และเนื่องจากบล็อกนี้ก็พึ่งพิง Github Pages กับ Jekyll อย่างเต็มตัว พอมีอะไรเปลี่ยนแปลงก็ควรจะเขียนถึงสักหน่อย"
-tags: [Github, Jekyll, update]
+tags: [Github, Jekyll, Update]
 image:
   feature: post/ghpjk/ghp-cover.jpg
 comments: true

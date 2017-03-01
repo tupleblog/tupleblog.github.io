@@ -3,7 +3,7 @@ author: tulakann
 layout: post
 title: มาลองเขียน LaTeX บน Atom กัน
 description: "เหมาะสำหรับผู้ที่ใช้ Atom อยู่แล้ว หรือยังไม่มี text editor อะไรในดวงใจเป็นพิเศษแล้วอยากลองเขียน LaTeX"
-tags: [Atom, LaTeX, editor]
+tags: [Atom, Latex, Editor]
 image:
   feature: post/latexa/latex-atom.jpg
 comments: true
