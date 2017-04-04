@@ -33,6 +33,18 @@ date: 2017-04-02 23:45:00
 - ประมวลผล (เพื่อแปลง text จากข่าวให้เป็นเมกทริกซ์ที่เราสามารถพล็อตได้)
 - พล็อต (visualization)
 
+สิ่งที่เราจะเขียนในโพสต์นี้เป็นเพียง 1 กิ่งก้านของ "How to learn Machine Learning Roadmap in 6 months"
+ที่แนะนำโดย `scikit-learn` เท่านั้น ไว้โพสต์หน้าๆ เราจะมาหาอะไรทำสนุกๆต่อ แต่ตอนนี้เรามาเริ่มกันเลยแล้วกัน
+
+<figure><center>
+  <img width="auto" src="https://d2wzhk7xhrnk1x.cloudfront.net/TEPbDsibS0Gr9Re8ePG7_ml_map.png" data-action="zoom"/>
+  <figcaption>
+    <a title="#">
+      "How to learn Machine Learning Roadmap in 6 month" (credit: <a href="http://scikit-learn.org/stable/tutorial/machine_learning_map/">scikit-learn.org</a>)
+    </a>
+  </figcaption>
+</center></figure>
+
 
 ## 1. เก็บข้อมูล
 
