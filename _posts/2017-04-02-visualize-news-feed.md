@@ -179,6 +179,8 @@ show(p)
   <img width="auto" src="/images/post/newsfeed/scatter_news.png" data-action="zoom"/>
 </center></figure>
 
+หรือดูแบบ [interactive](http://htmlpreview.github.io/?https://github.com/tupleblog/tuple_code/blob/master/newsfeed/scatter_news.html) ก็ได้
+
 หลังจากนั้นเราก็จะได้พล็อตออกมา และเมื่อเราลากเมาส์ผ่านไปบนพล็อต จุดที่เราลากผ่านจะโชว์หัวข้อข่าว
 ลิงค์ไปยังข่าว และที่มาของข่าวให้เรา จุดข้างบนสามจุดนั้นคือเรื่องเกี่ยวกับ SpaceX ทั้งหมด กลุ่มข่าวด้านล่างนี่
 เกี่ยวกับ Spotify และ Apple Music ส่วนข้างขวาเกี่ยวกับ Gadget เป็นหลัก
