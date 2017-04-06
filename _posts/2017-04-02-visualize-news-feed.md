@@ -55,9 +55,8 @@ date: 2017-04-02 23:45:00
 เราเริ่มด้วยเว็บไซต์โปรดของเราเลย `Wired.com`
 
 ```py
-import sys
-from newspaper import Article
 import newspaper
+from newspaper import Article
 
 wired_paper = newspaper.build('http://www.wired.com')
 wired_urls = [u for u in wired_paper.article_urls() if 'https://www.wired.com/' in u]
