@@ -173,7 +173,11 @@ p.circle('x', 'y', size=8, source=source,
 show(p)
 ```
 
-และนี่คือพล็อตแบบ [interactive](http://htmlpreview.github.io/?https://github.com/tupleblog/tuple_code/blob/master/newsfeed/scatter_news.html)
+และนี่คือพล็อตแบบ [interactive](http://htmlpreview.github.io/?https://github.com/tupleblog/tuple_code/blob/master/newsfeed/scatter_news.html) (เฉพาะบนคอมนะ)
+
+<figure class="hidepc"><center>
+    <img width="auto" src="/images/post/newsfeed/scatter_news.png" data-action="zoom"/>
+</center></figure>
 
 <head>
     <link rel="stylesheet" href="https://cdn.pydata.org/bokeh/release/bokeh-0.12.4.min.css" type="text/css" />
@@ -183,8 +187,16 @@ show(p)
         Bokeh.set_log_level("info");
     </script>
     <style>
+        .hidepc {
+            display: none !important;
+        }
+
         .bk-plot-wrapper {
         padding-left:50px;
+        }
+
+        .bk-toolbar-wrapper {
+            left: 525px !important;
         }
 
         @media only screen and (max-width: 500px) {
@@ -197,6 +209,14 @@ show(p)
             }
             .bk-plot-layout, .bk-layout-fixed {
                 height: 610px !important;
+            }
+
+            .bk-root {
+            display: none !important;
+            }
+
+            .hidepc {
+            display: block !important;
             }
         }
     </style>
