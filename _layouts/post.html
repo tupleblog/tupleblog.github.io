@@ -41,7 +41,7 @@
         <p class="entry-reading-time">
           <i class="fa fa-clock-o"></i>
           {% assign readtime = content | size | minus:8 | divided_by:site.words_per_minute %}
-          Reading time ~{% if readtime <= 1 %}1 minute{% else %}{{ readtime }} minutes{% endif %}
+          Reading time ~{% if page.read_time %}{{ page.read_time }} minutes{% else %}{% if readtime <= 1 %}1 minute{% else %}{{ readtime }} minutes{% endif %}{% endif %}
         </p><!-- /.entry-reading-time -->
         {% endif %}
       </div><!-- /.header-title-wrap -->

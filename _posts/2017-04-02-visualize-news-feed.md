@@ -8,6 +8,7 @@ image:
 tags: [Data, Data Science, Python]
 comments: true
 date: 2017-04-02 23:45:00
+read_time: 25
 ---
 
 สำหรับโพสต์ที่แล้ว เราได้ลองใช้ฟังก์ชันง่ายๆใน Python เพื่อช่วยในการวิเคราะห์ไลน์แชทกันไป
