@@ -71,7 +71,7 @@ https://raw.githubusercontent.com/titipata/bangkok_transit/master/data/stations.
 
 ## เสิร์ชป้ายใกล้เคียง
 
-บางทีเวลาเสิร์ชชื่อป้ายรถเมล์​หรือจุดที่เราจะไป ถ้าใน Google เค้ามี auto-correction หรือแก้คำผิดให้ แต่สำหรับ Python นั้น มีไลบรารี่ที่ติดมาด้วยชื่อว่า `difflib` โดยใน `difflib` นี้มีฟังค์ชันติดมาด้วยที่ช่วยให้เราหาคำที่เขียนใกล้เคียงได้ชื่อว่า `get_close_matches`
+บางทีเวลาเสิร์ชชื่อป้ายรถเมล์​หรือจุดที่เราจะไป ถ้าใน Google เค้ามี auto-correction หรือแก้คำผิดให้ แต่สำหรับ Python นั้น มีไลบรารี่ที่ติดมาด้วยชื่อว่า `difflib` โดยใน `difflib` นี้มีฟังก์ช่ันติดมาด้วยที่ช่วยให้เราหาคำที่เขียนใกล้เคียงได้ชื่อว่า `get_close_matches`
 
 อันนี้ไว้ใช้เวลา input ของเราเขียนเกือบถูกแล้ว แต่อาจจะมีเขียนผิดไปตัวนึง เราก็ยังแก้คำให้ไป
 ใกล้เคียงที่สุดกับสถานีที่เรามี
@@ -86,7 +86,7 @@ stations_thai = [station['station_thai_name'] for station in stations]
 station_closest = get_close_matches(query , stations_thai + stations_english, n=1, cutoff=0.6)
 ```
 
-ถ้าโหลด `transit.py` มา ข้างในนั้นจะมีฟังค์ชันชื่อ `transit.query_station('บางรัก', stations)`
+ถ้าโหลด `transit.py` มา ข้างในนั้นจะมีฟังก์ชันชื่อ `transit.query_station('บางรัก', stations)`
 โดยฟังก์ชันนี้จะรีเทิร์นป้ายที่มีชื่อใกล้เคียงที่สุดกับที่เราใส่เข้าไป
 
 
