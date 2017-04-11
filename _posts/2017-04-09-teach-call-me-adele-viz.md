@@ -97,13 +97,18 @@ javascript library ใช้สำหรับพล็อตโดยเฉพ�
   <script type="text/javascript" src="rune.js"></script>
   <style type="text/css">
     body {
-      background-color: #EAEAEA;
+      background-color: white;
     }
     #canvas svg {
+      background-color: white;   
+      display: block;
+      margin: auto;   
+    }
+    #canvas {
       background-color: white;
-      box-shadow: 0 3px 2px 0 rgba(0, 0, 0, 0.06),inset -1px -1px 1px 0 rgba(0, 0, 0, 0.02);
-      border: 1px solid #E2E2E2;
-      border-bottom-color: #CECECE;
+      display: flex;
+      justify-content: center;
+      height: 100vh;
     }
   </style>
 </head>
