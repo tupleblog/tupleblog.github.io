@@ -240,7 +240,7 @@ output_file.write(html)
 ใครที่ตามไม่ทันในโพสต์นี้หรืออยากลองไปทำกันต่อ สามารถไปดูกันได้ที่ [`bokeh_plot.ipynb`](https://nbviewer.jupyter.org/github/tupleblog/tuple_code/blob/master/denied_boarding/bokeh_plot.ipynb)
 
 
-## อารัมภบท
+## สุดท้าย แต่ไม่ท้ายสุด
 
 นอกจากโพสต์ของพี่ต้าแล้ว เราก็ชอบโพสต์ของ [The Wired](https://www.wired.com/2017/04/united-airlines-overbook-flights-usually-pays-off/)
 ที่อธิบายว่าทำไมสายการบินถึงต้องขายตั๋วเกินลิมิตของเครื่องบิน ลองไปอ่านกันดูนะ
