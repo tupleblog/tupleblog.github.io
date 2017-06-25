@@ -28,3 +28,11 @@ panyavee:
   web: http://panyavee.com/
   avatar: avatar/panavatar.jpg
   instagram: panyavee
+
+lert:
+  name: Lert
+  email:
+  bio: "PhD student at Lund University"
+  avatar: avatar/lertavatar.png
+  twitter:
+  google:
