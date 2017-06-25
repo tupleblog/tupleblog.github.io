@@ -2,7 +2,7 @@
 
 Titipata:
   name: TITIPATA
-  web: http://titipata.github.io/
+  web: https://titipata.github.io/
   email: titipat.a@u.northwestern.edu
   bio: "ชอบฟังเพลงอินดี้และอัลเทอร์เนทีฟ เวลาว่างชอบเขียนโปรแกรมและเล่นเกม"
   avatar: avatar/myavatar2.jpg
@@ -13,6 +13,7 @@ Titipata:
 
 tulakann:
   name: tulakann
+  web: https://bluenex.github.io/
   email: tulakan.r@gmail.com
   bio: "เวลาว่างส่วนใหญ่หายไปกับการนอน"
   avatar: avatar/tulavatar.jpg
