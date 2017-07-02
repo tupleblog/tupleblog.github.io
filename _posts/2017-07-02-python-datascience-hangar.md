@@ -4,7 +4,7 @@ title: Python Data Science and Machine Learning Meetup at Hangar
 author:
 description: Python Data Science and Machine Learning Meetup ที่ Hangar co-working space ของ DTAC จัดโดยทีม tupleblog
 image:
-  feature:
+  feature: post/python_meetup/Aug_2017.png
 tags: [Python, Data Science, Meetup, tupleblog]
 comments: true
 date: 2017-07-02 22:45:00
