@@ -44,7 +44,7 @@ Deep Learning Algorithm จาก Keras ตัดคำภาษาไทย แ
 ใครที่อยากรู้จักกับ speakers แต่ละคน tupleblog สัญญาว่าโพสต์หน้าจะมาเล่ารายละเอียดคร่าวๆของแต่ละคนอย่างแน่นอน
 
 
-## ลงทะเบียนเข้างาน
+[## ลงทะเบียนเข้างาน](https://docs.google.com/forms/d/12a00MMV4w60wG6p74uhanapoYZ9gTeGFYWn9IbDxqjk/viewform?edit_requested=true)
 
 พวกเรารับสมัครบุคคลทั่วไป อาจารย์ นิสิตและนักศึกษา ที่มีความรู้พื้นฐานของการใช้โปรแกรม Python
 และมีพื้นฐาน Data Science เล็กน้อยถึงปานกลาง หรือผู้ที่ใช้งาน Python อยู่ในงานวิจัยหรือธุรกิจ
