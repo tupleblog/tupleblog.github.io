@@ -3,7 +3,7 @@ author: tulakann
 layout: post
 title: "[nerd] Facebook Messenger รองรับการเรนเดอร์ (La)TeX Math แล้ว"
 description: ""
-tags: [Facebook, Messenger, Latex]
+tags: [Facebook, Messenger, Latex, Math, Code]
 image:
   feature: post/latex_messenger/cover.jpg
   credit: Wikimedia Common
@@ -84,13 +84,13 @@ A_{m,n} =
 
 ขอยกตัวอย่างด้วย snippet ของภาษา JavaScript (JS) ที่มาจาก GitHub นี้ละกัน
 
+~~~
 ```
-  ```
   function test() {
     console.log("notice the blank line before this function?");
   }
-  ```
 ```
+~~~
 
 จะเรนเดอร์ออกมาแบบนี้
 
@@ -100,13 +100,13 @@ A_{m,n} =
 
 แต่ความพิเศษมันอยู่ตรงที่เราสามารถไฮไลท์ syntax ของแต่ละภาษาได้ด้วย เพียงแค่เพิ่มชื่อภาษาเข้าไปหลัง <code>```</code> นั่นเอง แบบนี้
 
+~~~
+```javascript
+  function test() {
+    console.log("notice the blank line before this function?");
+  }
 ```
- ```javascript
- function test() {
-   console.log("notice the blank line before this function?");
- }
- ```
-```
+~~~
 
 code ที่เรนเดอร์แล้วก็จะออกมามีสีไฮไลท์อย่างที่มันควรจะเป็นแบบนี้เลย แท่นน
 
