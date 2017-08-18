@@ -12,7 +12,7 @@ share: true
 date: 2017-08-18 14:30:00
 ---
 
-สวัสดีครับผู้อ่านทุกท่าน วันนี้เราก็มีเรื่องเนิร์ดๆ กีคๆ มานำเสนออีกเช่นเคย โดยความเนิร์ดวันนี้ก็คือการที่ได้รับรู้ว่า Facebook Messenger รองรับการเรนเดอร์ [LaTeX](https://www.latex-project.org/) syntax แล้วจ้า โดยพวกเรารู้มาจากเพื่อนของ [@bachkukkik](https://www.facebook.com/kukkik.oparad) อีกที เนื่องจากยังหาข่าวหรืออ้างอิงที่ไหนไม่เจอนอกจาก[กระทู้นี้จาก Reddit](https://www.reddit.com/r/Physics/comments/6uc6fg/psa_latex_now_renders_on_facebook_messenger/) ก็จะขอเขียนจากเท่าที่ได้ลองเล่นดูละกัน โดยการเรนเดอร์แบบพิเศษนี้หลักๆ จะแบ่งเป็น TeX Math block กับ Inline code และ Fence code block ที่แสดงผลแตกต่างกัน เกริ่นแค่นี้พอ ลองไปเล่นจริงๆ กันดูเลยดีกว่า
+สวัสดีครับผู้อ่านทุกท่าน วันนี้เราก็มีเรื่องเนิร์ดๆ กีคๆ มานำเสนออีกเช่นเคย โดยความเนิร์ดวันนี้ก็คือการที่ได้รับรู้ว่า Facebook Messenger รองรับการเรนเดอร์ [LaTeX](https://www.latex-project.org/) syntax แล้วจ้า โดยพวกเรารู้มาจากพี่สาวของ [@bachkukkik](https://www.facebook.com/kukkik.oparad) อีกที เนื่องจากยังหาข่าวหรืออ้างอิงที่ไหนไม่เจอนอกจาก[กระทู้นี้จาก Reddit](https://www.reddit.com/r/Physics/comments/6uc6fg/psa_latex_now_renders_on_facebook_messenger/) ก็จะขอเขียนจากเท่าที่ได้ลองเล่นดูละกัน โดยการเรนเดอร์แบบพิเศษนี้หลักๆ จะแบ่งเป็น TeX Math block กับ Inline code และ Fence code block ที่แสดงผลแตกต่างกัน เกริ่นแค่นี้พอ ลองไปเล่นจริงๆ กันดูเลยดีกว่า
 
 ## TeX Math block
 
