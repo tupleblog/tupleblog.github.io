@@ -3,7 +3,7 @@
 Titipata:
   name: TITIPATA
   web: https://titipata.github.io/
-  email: titipat.a@u.northwestern.edu
+  email: my.titipat@gmail.com
   bio: "ชอบฟังเพลงอินดี้และอัลเทอร์เนทีฟ เวลาว่างชอบเขียนโปรแกรมและเล่นเกม"
   avatar: avatar/myavatar2.jpg
   twitter: titipat_a
@@ -21,6 +21,17 @@ tulakann:
   google:
     plus: tulakanRuangrong
   github: bluenex
+
+bachkukkik:
+  name: bachkukkik
+  web: https://github.com/bachkukkik/
+  email: krichkorn@gmail.com
+  bio: "a lonely man stand alone is known as bachkukkik"
+  avatar: avatar/bachkukkik.jpg
+  twitter: BachKukkik
+  google:
+    plus: +KrichkornOparad
+  github: bachkukkik
 
 panyavee:
   name: Panyavee
