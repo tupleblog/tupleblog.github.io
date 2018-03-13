@@ -195,11 +195,11 @@ df_Stock['SKU_8digits'] = df_Stock.index.map(lambda x : x.rpartition('-')[0])
 df_Stock
 ```
 <figure><center>
-  <img width="800" src="/images/post/python_for_business/df_collection04.png" data-action="zoom"/>
+  <img width="800" src="/images/post/python_for_business/df_stock01.png" data-action="zoom"/>
 
   <figcaption>
     <a title="Inline Code 1">
-      df_collection แบบมี SKU_8digits
+      df_Stock แบบมี SKU_8digits
     </a>
   </figcaption>
 </center></figure>
