@@ -235,7 +235,7 @@ df_collections.loc[:,('กำไรเฉลี่ย')][np.isnan(df_collections
 df_collections['กำไรXจำนวน'] = (df_collections['จำนวนหยิบของ'] * df_collections['กำไรเฉลี่ย'])
 ```
 <figure><center>
-  <img width="800" src="/images/post/python_for_business/df_stock01.png" data-action="zoom"/>
+  <img width="800" src="/images/post/python_for_business/df_collection06.png" data-action="zoom"/>
 
   <figcaption>
     <a title="Inline Code 1">
@@ -278,7 +278,7 @@ pivot_Order_box = pivot_Order_box[~pivot_Order_box.index.duplicated()]
 ```
 เลขติดลบ คือตำแหน่ง Column นับจากหลังสุดครับ -1 คือแถวหลังสุด -2 แถวรองหลังสุด
 
-บรรทัดล่างสุดเอาไว้แก้ duplicated Row ซึ่งปัญหานี้อาจเกิดได้หากข้อมูลที่เราเอามา .join() มี Key ซ้ำ***<br/>
+บรรทัดล่างสุดเอาไว้แก้ duplicated Row ซึ่งปัญหานี้อาจเกิดได้หากข้อมูลที่เราเอามา .join() มี Key ซ้ำ
 
 [อ่านเพิ่มเติมจากลิ้งนี้ครับ](https://stackoverflow.com/questions/22720739/pandas-left-outer-join-results-in-table-larger-than-left-table)
 
