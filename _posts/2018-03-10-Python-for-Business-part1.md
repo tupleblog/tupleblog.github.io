@@ -1,7 +1,7 @@
 ---
 author: bachkukkik
 layout: post
-title: "[Tutorial] Python for Business ฉบับแม่ค้า Part 1"
+title: "[Tutorial] Python for Business ฉบับพ่อค้า Part 1"
 description: ""
 tags: [Python, Business, Retail, Data, Code]
 image:
