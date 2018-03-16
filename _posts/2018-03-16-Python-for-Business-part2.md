@@ -127,12 +127,12 @@ def function_name(parameters):
 เราน่าจะพอเขียน Function สำหรับคัดกรองคำตอบไปประมาณนี้ครับผม
 ```py
 def profit_table_any_cond(string):
-    def profit_table_รายละเอียด(string):
+    def profit_table_detail(string):
         return pivot_Order_profit[pivot_Order_profit['รายละเอียด'].str.contains(string, case=False, na=False)][pivot_Order_profit.columns[pd.np.r_[-3,-11:-4,-2,-1]]].sort_values('GrossProfit7D', ascending=False)
 
     def profit_table_SKU(string):
         return pivot_Order_profit[pivot_Order_profit.index.str.contains(string, case=False, na=False)][pivot_Order_profit.columns[pd.np.r_[-3,-11:-4,-2,-1]]].sort_values('GrossProfit7D', ascending=False)
-    return pd.concat([profit_table_รายละเอียด(string), profit_table_SKU(string)])
+    return pd.concat([profit_table_detail(string), profit_table_SKU(string)])
 ```
 ยังจำคำสั่ง `pivot_Order_profit.columns[pd.np.r_[-3,-11:-4,-2,-1]]` ด้านบนกันได้อยู่ใช่ไหมครับ ส่วนนี้ให้ผลลัพธ์เป็น Header สำหรับการกรองข้อมูลนะครับ ใครลืมก็ย้อนไปดูด้านบน
 
@@ -140,7 +140,7 @@ def profit_table_any_cond(string):
 
 ส่วน `pivot_Order_profit.index.str.contains(string, case=False, na=False)` จะเกี่ยวกับ Keyword ฝั่งรหัสสินค้า(เป็น index ของเราตั้งแต่ Part 1)
 
-ผู้อ่านจะพอเห็นอยู่ว่า function ที่เราสร้างขึ้นมาเป็น function ที่ซ้อนใน function อีกทีนึงหรือที่เราเรียกกันว่า Nested function นะครับ โดยผลลัพธ์สุดท้ายของ Top-level Function `profit_table_any_cond(string)` จะเป็นผลลัพธ์ 2 function ย่อยของเรา(`profit_table_รายละเอียด(string)` และ `profit_table_SKU(string)`)รวมกันครับ ซึ่งผลลัพธ์สุดท้ายจะถูกรวมออกมาโดยใช้โค้ดว่า `return pd.concat([profit_table_รายละเอียด(string), profit_table_SKU(string)])`
+ผู้อ่านจะพอเห็นอยู่ว่า function ที่เราสร้างขึ้นมาเป็น function ที่ซ้อนใน function อีกทีนึงหรือที่เราเรียกกันว่า Nested function นะครับ โดยผลลัพธ์สุดท้ายของ Top-level Function `profit_table_any_cond(string)` จะเป็นผลลัพธ์ 2 function ย่อยของเรา(`profit_table_detail(string)` และ `profit_table_SKU(string)`)รวมกันครับ ซึ่งผลลัพธ์สุดท้ายจะถูกรวมออกมาโดยใช้โค้ดว่า `return pd.concat([profit_table_detail(string), profit_table_SKU(string)])`
 
 *หากใครอยากรู้เพิ่มเติมเกี่ยวกับ Nested Function [อ่านได้จากลิ้งนี้ครับ](https://stackoverflow.com/questions/1589058/nested-function-in-python)*
 
@@ -158,12 +158,12 @@ def profit_table_any_cond(string):
 ทำนองเดียวกันเราสามารถสรุปยอดสินค้าขายต่อวันเทียบสินค้าคงเหลือ 7 วันย้อนหลังแบบเจาะจงสินค้าได้โดยใช้ Function แบบครั้งก่อนได้เลยแต่แตกต่างกันที่ Function ใหม่ใช้ข้อมูลยอดขายแทนข้อมูลกำไร
 ```py
 def order_table_any_cond(string):
-    def order_table_รายละเอียด(string):
+    def order_table_detail(string):
         return pivot_Order_box[pivot_Order_box['รายละเอียด'].str.contains(string, case=False, na=False)][pivot_Order_box.columns[pd.np.r_[-3,-11:-4,-1,-2]]]
 
     def order_table_SKU(string):
         return pivot_Order_box[pivot_Order_box.index.str.contains(string, case=False, na=False)][pivot_Order_box.columns[pd.np.r_[-3,-11:-4,-1,-2]]]
-    return pd.concat([order_table_รายละเอียด(string), order_table_SKU(string)])
+    return pd.concat([order_table_detail(string), order_table_SKU(string)])
 ```
 
 ลอง call Function `order_table_any_cond(string)` ดูซักหน่อยโดยใช้ `'Us347'` เป็น input Keyword
@@ -180,12 +180,12 @@ def order_table_any_cond(string):
 แถมอีกสัก Function ละกัน อันนี้เอาไว้แสดงราคาขายกับสต็อก โดยที่อันไหนมีคำว่า `'เลิก'` แล้วก็ไม่่ต้องโชว์ครับผม จะได้บอกลูกค้าถูกว่าของชิ้นนี้ราคาเท่าไร มีของพร้อมส่งไหม
 ```py
 def filter_Stock_any_cond(string):
-    def filter_Stock_by_รายละเอียด(string):
+    def filter_Stock_by_detail(string):
         return df_Stock[df_Stock['รายละเอียด'].str.contains(string, case=False, na=False)][df_Stock.columns[pd.np.r_[0,1,2]]][df_Stock['รายละเอียด'].str.contains('เลิก') == False]
 
     def filter_Stock_by_SKU(string):
         return df_Stock[df_Stock.index.str.contains(string, case=False, na=False)][df_Stock.columns[pd.np.r_[0,1,2]]][df_Stock['รายละเอียด'].str.contains('เลิก') == False]
-    return pd.concat([filter_Stock_by_รายละเอียด(string), filter_Stock_by_SKU(string)])
+    return pd.concat([filter_Stock_by_detail(string), filter_Stock_by_SKU(string)])
 ```
 
 Call `filter_Stock_any_cond('Us347')` จะได้ผลในรูปด้านล่าง ซึ่งเห็นได้ชัดเจนว่า US347-AL-C (เลิก)Phosphorescence Glowing iPhone X Case Windu ที่เคยมีคำตอบใน `order_table_any_cond('Us347')` ไม่มีอยู่ในคำตอบของ `filter_Stock_any_cond('Us347')`
