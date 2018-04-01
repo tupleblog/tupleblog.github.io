@@ -30,6 +30,9 @@ date: 2018-03-29 22:30:00s
 </center></figure>
 
 
+สำหรับใครที่อยากทำตามระหว่างอ่านด้วยก็ลองไปดูโค้ดกันใน [Jupyter Notebook](https://github.com/tupleblog/tuple_code/blob/master/deepcut_news_classification/news_classification_using_deepcut.ipynb) ได้เลย
+
+
 ## เริ่มต้นจากติดตั้งซอฟต์แวร์ก่อน
 
 เริ่มแรกเลยก็ต้องโหลดและติดตั้ง [deepcut](https://github.com/rkcosmos/deepcut) ก่อนฮะ ลองอ่านวิธีติดตั้งจากใน
@@ -143,7 +146,7 @@ def text_to_bow(tokenized_text, vocabulary_):
                       shape=(n_doc, len(vocabulary_)))
     return X
 
-vocabulary_ = {v: k for k, v in enumerate(set(chain.from_iterable(tokenized_text)))}
+vocabulary_ = {v: k for k, v in enumerate(set(chain.from_iterable(tokenized_texts)))}
 X = text_to_bow(tokenized_texts, vocabulary_)
 ```
 
@@ -157,9 +160,11 @@ X = text_to_bow(tokenized_texts, vocabulary_)
 ```py
 from sklearn.feature_extraction.text import TfidfTransformer
 from sklearn.decomposition import TruncatedSVD
-from sklearn.model_selection import train_test_split
+from sklearn.model_selection import train_test_split, cross_val_score
 
 transformer = TfidfTransformer()
+svd_model = TruncatedSVD(n_components=100,
+                         algorithm='arpack', n_iter=100)
 X_tfidf = transformer.fit_transform(X)
 X_svd = svd_model.fit_transform(X_tfidf)
 y = pd.get_dummies(df.news_type).as_matrix() # แปลงจากประเภทข่าวให้เป็นฟอร์แมต 0, 1 แทน
@@ -251,7 +256,7 @@ for c in range(y.shape[1]):
 ```py
 text =  'วันศุกร์ที่ 4 สิงหาคม 2560\n', 'ASEAN-India Expo and Forum การเชื่อมโยงอาเซียน-อินเดียครั้งสำคัญ สู่การเติบโตและเสถียรภาพของเศรษฐกิจโลก ฯพณฯ นายกรัฐมนตรี พลเอกประยุทธ์ จันทร์โอชา เป็นประธานในพิธีเปิด “ASEAN-India Expo and Forum” วาระทางเศรษฐกิจแห่งปี ซึ่งมีรัฐบาลไทยโดยกระทรวงพาณิชย์เป็นเจ้าภาพ จับมือกับหน่วยงานพันธมิตร และอีก 9 ประเทศสมาชิกอาเซียนรวมทั้งประเทศอินเดีย จัดเวทีพบปะครั้งใหญ่ระหว่างผู้แทนระดับสูงภาครัฐและภาคเอกชนจากทั้งสองฝ่าย ...'
 tokenized_text = deepcut.tokenize(text)
-x = text_to_bow([tokenized_text])
+x = text_to_bow([tokenized_text], vocabulary_)
 x_tfidf = transformer.transform(x)
 x_svd = svd_model.transform(x_tfidf)
 pred = [model.predict_proba(x_svd.reshape(-1, 1).T).ravel()[1] for model in logist_models]
