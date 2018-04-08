@@ -8,7 +8,7 @@ image:
   feature: post/deepcut_news/front_page.png
 comments: true
 share: true
-date: 2018-03-29 22:30:00s
+date: 2018-03-29 22:30:00
 
 ---
 
@@ -275,6 +275,51 @@ print(list(zip(news_type, pred)))
 ```
 
 ความน่าจะเป็นที่ข่าวนี้เป็นข่าวด้านเศรษฐกิจสูงที่สุดเลย ตรงเป๊ะครับ :)
+
+
+## (แถม) ลองใช้ word vector จาก fastText มาลองคัดข่าว
+
+เราจะมาลองใช้ฟีเจอร์ที่คนทั่วไปใช้กันอย่าง word vector เข้ามาช่วยบ้าง เพื่อดูว่าเราจะได้ความแม่นยำของ
+การทำนายสูงขึ้นขนาดไหน ในที่นี้เราจะนำ pre-trained vectors จาก Facebook [`fastText`](https://github.com/facebookresearch/fastText/blob/master/pretrained-vectors.md)
+มาลองคัดข่าวดูหน่อยซิ (ต้อง install `fastText` ตาม repository ก่อน แล้วก็โหลด `wiki.th.bin` จาก repository มานะ)
+และถ้า `fastText` ยังทำงานไม่ดีพอ เราก็ยังมีตัวเลือกอย่างเช่น [`thai2vec`](https://github.com/cstorm125/thai2vec)
+ใช้ลองใช้กันอีกด้วย
+
+วิธีการคัดข่าวหรือคัดประเภทเอกสารโดยใช้ word vector ที่คนใช้มากๆคือการนำ deep learning เข้ามาช่วย
+แต่ในที่นี้เราจะลองแบบง่ายๆคือการเฉลี่ย word vector ของคำทุกคำในข่าวก่อนว่าจะทำได้ดีขนาดไหน
+
+```py
+from fastText import load_model
+thai_model = load_model('/wiki.th/wiki.th.bin')
+
+def get_sentence_vector(ls):
+    """Average word vector for given list of words using fastText"""
+    wv_list = []
+    for w in ls:
+        wv = thai_model.get_word_vector(w)
+        if w is not None:
+            wv_list.append(wv)
+    return np.mean(wv_list, axis=0)
+
+X = np.vstack(df.tokenized_text.map(get_sentence_vector))
+y = pd.get_dummies(df.news_type).as_matrix()
+```
+
+ถ้าลองใช้ `LogisticRegression` มาเทรนตามเดิม จะได้ความแม่นยำประมาณนี้
+
+```
+[('ข่าวทำเนียบรัฐบาล', 0.8853018336062501),
+ ('ด้านกฎหมายฯ', 0.9738665554449785),
+ ('ด้านการศึกษาฯ', 0.947490680019112),
+ ('ด้านความมั่นคง', 0.9029648005892549),
+ ('ด้านสังคม', 0.9086525359405485),
+ ('ด้านเศรษฐกิจ', 0.8676345148508368)]
+```
+
+อ้าแย่จัง ยังสู้ไม่เท่าเทคนิค bag of words ที่เราพูดกันมาก่อนหน้า แต่อย่าลืมนึกไปว่า ถ้าเราเอาไปคัดเอกสาร
+ที่เราไม่เคยเห็นมาก่อน การใช้ word vector นั้นมีข้อดีคือเค้าเก็บเวกเตอร์ที่เทรนมาจาก Wikipedia และ
+เอกสารอีกมากมายซึ่งทำให้เราไม่ต้องขยาย bag of words ออกไปจนใหญ่มากๆนะ นอกจากนี้เรายังสามารถใช้เทคนิคจาก deep learning มาช่วยในการคัดข่าวจากการดู sequence ของ word vectors ได้ด้วย
+
 
 ## อารัมภบท
 
