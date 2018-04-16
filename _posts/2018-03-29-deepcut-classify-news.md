@@ -288,37 +288,62 @@ print(list(zip(news_type, pred)))
 วิธีการคัดข่าวหรือคัดประเภทเอกสารโดยใช้ word vector ที่คนใช้มากๆคือการนำ deep learning เข้ามาช่วย
 แต่ในที่นี้เราจะลองแบบง่ายๆคือการเฉลี่ย word vector ของคำทุกคำในข่าวก่อนว่าจะทำได้ดีขนาดไหน
 
+จริงๆแล้ว โค้ดข้างล่างเราไม่ได้เฉลี่ยซะทีเดียว เราใช้เทคนิคจากเปเปอร์ ICLR 2017,
+_A Simple but Tough-to-Beat Baseline for Sentence Embeddings_ ซึ่งใส่น้ำหนักให้กับ
+word vector ก่อนเฉลี่ยตามความน่าจะเป็นของการเกิดของคำ จากนั้นเราก็หักออกด้วย first component
+Eigenvector ฮะ
+
+
 ```py
 from fastText import load_model
-thai_model = load_model('/wiki.th/wiki.th.bin')
+from itertools import chain
+from collections import Counter
+from numpy.linalg import eig
 
-def get_sentence_vector(ls):
-    """Average word vector for given list of words using fastText"""
-    wv_list = []
+thai_model = load_model('/wiki.th/wiki.th.bin')
+word_appearance = Counter(chain.from_iterable(df.tokenized_text_clean))
+word_df = pd.DataFrame(list(word_appearance.items()), columns=['word', 'occurence'])
+word_df['p_occurence']  = word_df.occurence / word_df.occurence.sum()
+p_dict = {r['word']: r['p_occurence'] for _, r in word_df.iterrows()}
+
+def get_sentence_vector(ls, a=10e-4):
+    """Average word vector for given list of words using fastText
+
+    ref: A Simple but Tough-to-Beat Baseline for Sentence Embeddings, ICLR 2017
+    https://openreview.net/pdf?id=SyK00v5xx
+    """
+    wvs = []
     for w in ls:
         wv = thai_model.get_word_vector(w)
         if w is not None:
-            wv_list.append(wv)
-    return np.mean(wv_list, axis=0)
+            wvs.append([wv, p_dict[w]])
+    wvs = np.array(wvs)
+    return np.mean(wvs[:, 0] * (a / (a + wvs[:, 1])), axis=0)
 
 X = np.vstack(df.tokenized_text.map(get_sentence_vector))
+eig_val, eig_vec = eig(X.T.dot(X))
+u = eig_vec[:, 0].reshape(-1, 1).T
+X_sent = np.vstack([x - u.T.dot(u).dot(x) for x in X])
 y = pd.get_dummies(df.news_type).as_matrix()
 ```
 
 ถ้าลองใช้ `LogisticRegression` มาเทรนตามเดิม จะได้ความแม่นยำประมาณนี้
 
 ```
-[('ข่าวทำเนียบรัฐบาล', 0.8853018336062501),
- ('ด้านกฎหมายฯ', 0.9738665554449785),
- ('ด้านการศึกษาฯ', 0.947490680019112),
- ('ด้านความมั่นคง', 0.9029648005892549),
- ('ด้านสังคม', 0.9086525359405485),
- ('ด้านเศรษฐกิจ', 0.8676345148508368)]
+[('ข่าวทำเนียบรัฐบาล', 0.8791321786744998),
+ ('ด้านกฎหมายฯ', 0.9696326321735704),
+ ('ด้านการศึกษาฯ', 0.9424088596016322),
+ ('ด้านความมั่นคง', 0.9021179281713374),
+ ('ด้านสังคม', 0.9069586440039169),
+ ('ด้านเศรษฐกิจ', 0.8617069956188275)]
 ```
 
-อ้าแย่จัง ยังสู้ไม่เท่าเทคนิค bag of words ที่เราพูดกันมาก่อนหน้า แต่อย่าลืมนึกไปว่า ถ้าเราเอาไปคัดเอกสาร
-ที่เราไม่เคยเห็นมาก่อน การใช้ word vector นั้นมีข้อดีคือเค้าเก็บเวกเตอร์ที่เทรนมาจาก Wikipedia และ
-เอกสารอีกมากมายซึ่งทำให้เราไม่ต้องขยาย bag of words ออกไปจนใหญ่มากๆนะ นอกจากนี้เรายังสามารถใช้เทคนิคจาก deep learning มาช่วยในการคัดข่าวจากการดู sequence ของ word vectors ได้ด้วย
+อ้าแย่จัง ยังสู้ไม่เท่าเทคนิค bag of words ที่เราพูดกันมาก่อนหน้า แต่ก็ได้ความแม่นยำดีมากๆ
+แต่อย่าลืมนึกไปว่า ถ้าเราเอาไปคัดเอกสารที่เราไม่เคยเห็นมาก่อน การใช้ word vector
+นั้นมีข้อดีคือเค้าเก็บเวกเตอร์ที่เทรนมาจาก Wikipedia และ
+เอกสารอีกมากมายซึ่งทำให้เราไม่ต้องขยาย bag of words ออกไปจนใหญ่มากๆนะ
+นอกจากนี้เรายังเพิ่มความแม่นยำโดยการนำเทคนิค deep learning มาช่วยในการคัดข่าวจากการดู
+sequence ของ word vectors ได้อีกด้วย
 
 
 ## อารัมภบท
