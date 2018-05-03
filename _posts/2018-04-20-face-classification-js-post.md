@@ -89,6 +89,26 @@ date: 2018-04-20 22:30:00
 ส่วนภาพของ ดร. สมคิด อารมณ์ดีครับ happy 70 เปอร์เซ็นต์
 
 
+## ทดลองกับน้องนิดาวรรณ
+
+ไม่ใช่แค่หน้าท่านนายกเท่านั้น เรามาลองมาตรวจจับหน้าสาวๆกันบ้างกับน้องนิด อดีตผู้เข้าแข่งขัน the Voice, Thailand
+ทางทีม tupleblog ต้องขอบคุณน้องนิดาวรรณที่แชร์ภาพมาให้เราลองใช้ face classification กันฮะ ส่วนใครที่อยากจะไปติดตามผลงานของน้อง
+ก็ไปตามกันได้เลยที่ instagram: [nid_ndw](https://www.instagram.com/nid_ndw/)
+
+
+<figure><center>
+  <img width="500" src="/images/post/face-classification/nidawan.png" data-action="zoom"/>
+
+  <figcaption>
+    <a title="น้องนิด">
+      ทดลองใช้ tupleblog.github.io/face-classification-js กับภาพของน้องนิด
+    </a>
+  </figcaption>
+</center></figure>
+
+ทีนี้ก็ไปลองเล่นกับภาพตัวเองเลย :)
+
+
 ## ทำไมโมเดลยังไม่ดี?
 
 แน่นอนว่าถ้าใครลองเล่นกันดูจะพบว่า บางทีเราจับอารมณ์และเพศได้ไม่ตรง
