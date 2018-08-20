@@ -42,5 +42,7 @@ or previous posts in the `_posts` folder
 
 
 ### Members
-- [Titipat Achakulvisut (My)](http://titipata.github.io)
+- [Titipat (My)](http://titipata.github.io)
 - [Tulakan Ruangrong (Tul)](https://github.com/bluenex)
+- [Kukkik Oparad (Kukkik)](https://github.com/bachkukkik)
+- [Kittinan (Tun)](https://github.com/kittinan)
