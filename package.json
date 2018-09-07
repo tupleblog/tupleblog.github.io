@@ -15,15 +15,15 @@
   "devDependencies": {
     "browser-sync": "^2.10.1",
     "bundler": "^0.8.0",
-    "grunt": "~0.4.1",
-    "grunt-contrib-clean": "~0.5.0",
-    "grunt-contrib-imagemin": "~0.8.0",
-    "grunt-contrib-jshint": "~0.6.3",
-    "grunt-contrib-uglify": "~0.2.2",
-    "grunt-contrib-watch": "~0.5.2",
-    "grunt-svgmin": "~0.2.0",
+    "grunt": "~1.0.3",
+    "grunt-contrib-clean": "~1.1.0",
+    "grunt-contrib-imagemin": "~2.0.1",
+    "grunt-contrib-jshint": "~1.1.0",
+    "grunt-contrib-uglify": "~4.0.0",
+    "grunt-contrib-watch": "~1.1.0",
+    "grunt-svgmin": "~5.0.0",
     "gulp": "^3.9.0",
-    "gulp-shell": "^0.5.1",
+    "gulp-shell": "^0.6.5",
     "lodash": "^4.17.5"
   }
 }
