@@ -68,15 +68,15 @@ alpha = 0.02
 J = []
 
 def compute_cost(x):
-    J = x**2 - 4*x
+    J = x ** 2 - 4 * x
     return J
 
 def compute_grad(x):
-    grad = 2*x - 4
+    grad = 2 * x - 4
     return grad
 
 for i in range(n_iter):
-    x = x - alpha*compute_grad(x) # gradient descent
+    x = x - alpha * compute_grad(x) # gradient descent
     J.append(compute_cost(x)) # compute cost
 print 'final x = %s' % x
 print 'final cost = %s' % J[-1]
