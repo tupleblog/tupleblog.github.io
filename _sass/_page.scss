@@ -367,12 +367,18 @@ header .entry-meta {
 		@media #{$medium} {
 			margin-left: 20px;
 			margin-right: 20px;
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-evenly;
 		}
 		@media #{$large} {
-			max-width: 800px;
+			max-width: 1024px;
 			margin-top: 50px;
 			margin-left: auto;
 			margin-right: auto;
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-evenly;
 		}
 	}
 	article {
@@ -382,11 +388,13 @@ header .entry-meta {
 		margin-bottom: 20px;
 		padding: 25px 15px;
 		@media #{$medium} {
+			width: 49%;
 			padding: 30px;
 		}
 		@media #{$large} {
+			width: 32%;
 			margin-bottom: 30px;
-			padding: 50px 80px;
+			padding: 20px;
 		}
 	}
 }
@@ -402,9 +410,9 @@ header .entry-meta {
 		margin-bottom: 15px;
 	}
 	@media #{$large} {
-		margin-top: -50px;
-		margin-left: -80px;
-		margin-right: -80px;
+		margin-top: -20px;
+		margin-left: -20px;
+		margin-right: -20px;
 		margin-bottom: 20px;
 	}
 	img {
