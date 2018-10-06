@@ -399,6 +399,10 @@ header .entry-meta {
 	}
 }
 .entry-image-index {
+	height: 180px;
+	overflow: hidden;
+	position: relative;
+
 	margin-top: -25px;
 	margin-left: -15px;
 	margin-right: -15px;
@@ -416,6 +420,11 @@ header .entry-meta {
 		margin-bottom: 20px;
 	}
 	img {
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		margin: auto;
+
 		@include border-radius(3px,0,0,3px); // round image corners
 	}
 }
