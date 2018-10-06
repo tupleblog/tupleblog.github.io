@@ -15,6 +15,9 @@ body {
 	}
 }
 .entry-content {
+	overflow: hidden;
+	height: 12.5em;
+
 	@include font-size(16);
 	// Dotted line underlines for links
 	p > a,
@@ -23,6 +26,14 @@ body {
 		&:hover {
 			border-bottom-style: solid;
 		}
+	}
+}
+.entry-title {
+	line-height: 1em;
+	margin-block-start: 0.25em;
+	margin-block-end: 0.25em;
+	a {
+		font-size: 1.5rem;
 	}
 }
 
