@@ -20,7 +20,7 @@ image:
       <span class="entry-date date published updated">
         <time datetime="{{ post.date | date_to_xmlschema }}">
           <a href="{{ site.url }}{{ post.url }}">
-            {{ post.date | date: "%B %d, %Y" }}
+            {{ post.date | date: "%d-%b-%Y" }}
           </a>
         </time>
       </span>
@@ -35,7 +35,7 @@ image:
       <span class="entry-reading-time">
         <i class="fa fa-clock-o"></i>
         {% assign readtime = post.content | size | minus:8 | divided_by: site.words_per_minute %}
-        Reading time ~{% if post.read_time %}{{ post.read_time }} minutes{% else %}{% if readtime <= 1 %}1 minute{% else %}{{ readtime }} minutes{% endif %}{% endif %}
+        &nbsp;~{% if post.read_time %}{{ post.read_time }} min{% else %}{% if readtime <= 1 %}1 min{% else %}{{ readtime }} min{% endif %}{% endif %}
       </span><!-- /.entry-reading-time -->
       {% endif %}
     </div><!-- /.entry-meta -->

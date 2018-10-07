@@ -25,6 +25,14 @@ body {
 		}
 	}
 }
+.entry-title {
+	line-height: 1em;
+	margin-block-start: 0.25em;
+	margin-block-end: 0.25em;
+	a {
+		font-size: 1.5rem;
+	}
+}
 
 // Entry Header
 // --------------------------------------------------
@@ -367,12 +375,18 @@ header .entry-meta {
 		@media #{$medium} {
 			margin-left: 20px;
 			margin-right: 20px;
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-evenly;
 		}
 		@media #{$large} {
-			max-width: 800px;
+			max-width: 1024px;
 			margin-top: 50px;
 			margin-left: auto;
 			margin-right: auto;
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-evenly;
 		}
 	}
 	article {
@@ -382,15 +396,25 @@ header .entry-meta {
 		margin-bottom: 20px;
 		padding: 25px 15px;
 		@media #{$medium} {
+			width: 49%;
 			padding: 30px;
 		}
 		@media #{$large} {
+			width: 32%;
 			margin-bottom: 30px;
-			padding: 50px 80px;
+			padding: 20px;
 		}
+	}
+	.entry-content {
+		overflow: hidden;
+		height: 12.5em;
 	}
 }
 .entry-image-index {
+	height: 180px;
+	overflow: hidden;
+	position: relative;
+
 	margin-top: -25px;
 	margin-left: -15px;
 	margin-right: -15px;
@@ -402,12 +426,17 @@ header .entry-meta {
 		margin-bottom: 15px;
 	}
 	@media #{$large} {
-		margin-top: -50px;
-		margin-left: -80px;
-		margin-right: -80px;
+		margin-top: -20px;
+		margin-left: -20px;
+		margin-right: -20px;
 		margin-bottom: 20px;
 	}
 	img {
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		margin: auto;
+
 		@include border-radius(3px,0,0,3px); // round image corners
 	}
 }
