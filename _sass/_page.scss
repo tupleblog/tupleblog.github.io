@@ -15,9 +15,6 @@ body {
 	}
 }
 .entry-content {
-	overflow: hidden;
-	height: 12.5em;
-
 	@include font-size(16);
 	// Dotted line underlines for links
 	p > a,
@@ -407,6 +404,10 @@ header .entry-meta {
 			margin-bottom: 30px;
 			padding: 20px;
 		}
+	}
+	.entry-content {
+		overflow: hidden;
+		height: 12.5em;
 	}
 }
 .entry-image-index {
