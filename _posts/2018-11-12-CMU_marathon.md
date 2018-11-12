@@ -1,7 +1,7 @@
 ---
 author: bachkukkik
 layout: post
-title: "แนะนำนักวิ่ง CMU Marathon 2019 แบบแแมวๆ"
+title: "ใครไปวิ่งงาน CMU Marathon 2019 บ้างจ๊ะ"
 description: "webscraping, clean, plot แบบแมวๆ"
 tags: [CMU Marathon, Marathon]
 image:
