@@ -35,7 +35,7 @@ data = requests.get(URL).json()
 marathon_df = pd.DataFrame(data['rows'])
 ```
 <figure><center>
-  <img width="800" src="images/post/cmu_marathon/marathon_df.png" data-action="zoom"/>
+  <img width="800" src="/images/post/cmu_marathon/marathon_df.png" data-action="zoom"/>
 
   <figcaption>
     <a title="Inline Code 1">
@@ -61,7 +61,7 @@ def clean_string(s):
 marathon_df['courseList'] = marathon_df.courseList.map(lambda x: clean_string(x))
 ```
 <figure><center>
-  <img width="800" src="images/post/cmu_marathon/cleand1_marathon_df.png" data-action="zoom"/>
+  <img width="800" src="/images/post/cmu_marathon/cleand1_marathon_df.png" data-action="zoom"/>
 
   <figcaption>
     <a title="Inline Code 1">
@@ -104,7 +104,7 @@ g.set_xlabels(label='', fontsize=15)
 g.despine(left=True)
 ```
 <figure><center>
-  <img width="800" src="images/post/cmu_marathon/program_by_gender.png" data-action="zoom"/>
+  <img width="800" src="/images/post/cmu_marathon/program_by_gender.png" data-action="zoom"/>
 
   <figcaption>
     <a title="Inline Code 1">
@@ -143,7 +143,7 @@ ratio_df[['x', 'y', 'courseList']].apply(lambda x: ax.text(*x),axis=1);
 plt.axhline(y=1, linewidth=1, color='grey')
 ```
 <figure><center>
-  <img width="800" src="images/post/cmu_marathon/ratio_program.png" data-action="zoom"/>
+  <img width="800" src="/images/post/cmu_marathon/ratio_program.png" data-action="zoom"/>
 
   <figcaption>
     <a title="Inline Code 1">
@@ -174,7 +174,7 @@ g.set_xlabels(label='', fontsize=15)
 g.despine(left=True)
 ```
 <figure><center>
-  <img width="800" src="images/post/cmu_marathon/shirt_size.png" data-action="zoom"/>
+  <img width="800" src="/images/post/cmu_marathon/shirt_size.png" data-action="zoom"/>
 
   <figcaption>
     <a title="Inline Code 1">
