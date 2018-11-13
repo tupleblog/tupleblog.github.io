@@ -65,6 +65,17 @@ marathon_df['courseList'] = marathon_df.courseList.map(lambda x: clean_string(x)
 
   <figcaption>
     <a title="Inline Code 1">
+      sum_df.groupby('gender').sum()
+    </a>
+  </figcaption>
+</center></figure>
+
+สรุปจำนวนนักวิ่งชายหญิงได้เป็นดังนี้ครับ
+<figure><center>
+  <img width="800" src="/images/post/cmu_marathon/summary_runner.png" data-action="zoom"/>
+
+  <figcaption>
+    <a title="Inline Code 1">
       marathon_df.head()
     </a>
   </figcaption>
