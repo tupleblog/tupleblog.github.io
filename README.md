@@ -6,7 +6,7 @@ Repository for [tupleblog](http://tupleblog.github.io) (in Thai) based on [Jekyl
 
 `tpb` script is now live! `tpb.sh` will help you install and serve the site easily. All you need to have is Ruby version >= `2.5.3`.
 
-Here is how the script help looks like:
+Here is how the script looks like:
 
 ```sh
 $ ./tpb.sh
@@ -17,7 +17,7 @@ Usage: ./tpb.sh [-i] [-d]
     -d, --debug       serve jekyll locally using bundler.
 ```
 
-If you have already installed Ruby, you can go ahead with the command `./tpb.sh -i`. This will install `bundler` if it is not installed yet and then run `bundle install` for you. Another command is `./tpb.sh -d` or debug. This command starts with commenting specified `url` in the `_config.yml` of the project then serving Jekyll with `JEKYLL_ENV=production` prefix. It also uncomment the line for you when you stop the server by hitting `ctrl`+`c`.
+If you have already installed Ruby, you can go ahead with the command `./tpb.sh -i`. This will install `bundler` if it is not installed yet and then run `bundle install` for you. Another command is `./tpb.sh -d` for debugging locally. This command starts with commenting specified `url` in the `_config.yml` of the project then serving Jekyll with `JEKYLL_ENV=production` prefix. It also uncomments the line for you when you stop the server by hitting `ctrl`+`c`.
 
 
 ### Running the blog locally
