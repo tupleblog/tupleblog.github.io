@@ -2,6 +2,11 @@
 
 Repository for [tupleblog](http://tupleblog.github.io) (in Thai) based on [Jekyll](http://jekyllrb.com/) [HPSTR](https://github.com/mmistakes/hpstr-jekyll-theme) theme.
 
+### Write on Gitpod
+
+[Gitpod](https://gitpod.io) is an amazing online IDE especially for GitHub. You can start writing the blog on Gitpod by clicking [here](https://gitpod.io/#https://github.com/tupleblog/tupleblog.github.io) and logging in with your GitHub Authentication.
+
+
 ### `tpb` script
 
 `tpb` script is now live! `tpb.sh` will help you install and serve the site easily. All you need to have is Ruby version >= `2.5.3`.

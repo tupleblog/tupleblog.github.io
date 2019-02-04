@@ -65,7 +65,17 @@ installDeps() {
 ## debug locally
 debugLocally() {
   local config_file
+  local fwp_pid
   config_file="./_config.yml"
+
+  if type gp > /dev/null; then
+    echo -e ">> Running on Gitpod.. Forwarding port 4000 to 4001 to expose publicly..\n"
+
+    gp forward-port 4000 4001 &
+
+    # collect pid of forwarding port to kill later
+    fwp_pid="$!"
+  fi
 
   # comment url line on start
   xsed 's/^(url:.*)/\# \1/' $config_file
@@ -75,6 +85,12 @@ debugLocally() {
 
   # uncomment url line on stop
   xsed 's/^#\s*(url: https\:\/\/tupleblog.*)/\1/' $config_file
+
+  # if there is forward port, kill it
+  if [ ! -z "$fwp_pid" ]; then
+    echo -e "\n>> Killing pid: $fwp_pid.."
+    kill -9 "$fwp_pid"
+  fi
 }
 
 # ---------------------------
