@@ -8,7 +8,7 @@ image:
   feature: post/ais_fiber/fiber_cover.jpg
 comments: true
 share: true
-date: 2019-02-03 22:30:00
+date: 2019-02-04 22:30:00
 ---
 
 ## เกริ่นนำ
