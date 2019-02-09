@@ -2,6 +2,29 @@
 
 Repository for [tupleblog](http://tupleblog.github.io) (in Thai) based on [Jekyll](http://jekyllrb.com/) [HPSTR](https://github.com/mmistakes/hpstr-jekyll-theme) theme.
 
+### Write on Gitpod
+
+[Gitpod](https://gitpod.io) is an amazing online IDE especially for GitHub. You can start writing the blog on Gitpod by clicking [here](https://gitpod.io/#https://github.com/tupleblog/tupleblog.github.io) and logging in with your GitHub Authentication.
+
+
+### `tpb` script
+
+`tpb` script is now live! `tpb.sh` will help you install and serve the site easily. All you need to have is Ruby version >= `2.5.3`.
+
+Here is how the script looks like:
+
+```sh
+$ ./tpb.sh
+Usage: ./tpb.sh [-i] [-d]
+
+  Options:
+    -i, --install     install dependencies with gem (gem install bundler) and bundler (bundle install).
+    -d, --debug       serve jekyll locally using bundler.
+```
+
+If you have already installed Ruby, you can go ahead with the command `./tpb.sh -i`. This will install `bundler` if it is not installed yet and then run `bundle install` for you. Another command is `./tpb.sh -d` for debugging locally. This command starts with commenting specified `url` in the `_config.yml` of the project then serving Jekyll with `JEKYLL_ENV=production` prefix. It also uncomments the line for you when you stop the server by hitting `ctrl`+`c`.
+
+
 ### Running the blog locally
 
 First, go to `_config.yml` then change line 9 for running locally. Then, change
@@ -11,7 +34,7 @@ directory to the repository and then do the following
   2. Download `ruby` using [Homebrew](https://brew.sh/) for Mac. For Windows, download **RubyInstaller** and
   **DEVELOPMENT KIT** regarding your OS architecture from [here](https://rubyinstaller.org/downloads/).
   For **RubyInstaller**, just double click and done. For **DEVELOPMENT KIT**, please follows [its instruction](https://github.com/oneclick/rubyinstaller/wiki/Development-Kit).
-  3. Update your installed gems to latest version `gem update`. If updating failed try running `gem update --system` to update its core (see [this post](http://guides.rubygems.org/ssl-certificate-update/#installing-using-update-packages)). 
+  3. Update your installed gems to latest version `gem update`. If updating failed try running `gem update --system` to update its core (see [this post](http://guides.rubygems.org/ssl-certificate-update/#installing-using-update-packages)).
   4. `gem install bundler`
   5. `bundle install` (For Windows, run `cmd` as Administrator)
   6. `bundle exec jekyll serve` to serve the site in port 4000. You can also run
