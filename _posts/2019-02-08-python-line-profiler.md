@@ -12,10 +12,11 @@ date: 2019-02-08 22:30:00
 ---
 
 ## เกริ่นนำ
+
 ในการเขียนโปรแกรมนอกจากความถูกต้องในการทำงานของโปรแกรมแล้ว เราต้องการโปรแกรมที่ทำงานได้รวดเร็ว แต่บางทีเราก็ไม่รู้ว่าจะต้อง Optimize โปรแกรมกันตรงไหน วันนี้ผมจึงมาแนะนำการใช้งาน [line_profiler](https://github.com/rkern/line_profiler) เพื่อทำ profiler ในการตรวจสอบความเร็วในการทำงานของโค้ด Python ในแต่ละบรรทัดกันเลย
 
-
 ## ติดตั้ง
+
 ติดตั้ง Package ผ่าน pip กันตามปกติ
 
 ```bash
@@ -31,11 +32,11 @@ import time
 
 @profile
 def number():
-	s = 0
-	for i in range(500):
-		s += i
-	time.sleep(1)
-	return s
+    s = 0
+    for i in range(500):
+        s += i
+    time.sleep(1)
+    return s
 
 print(number())
 ```
@@ -84,7 +85,7 @@ python -m line_profiler  test.py.lprof
 ```python
 %lprun -f [function name] [call function]
 
-#Example
+# Example
 %lprun -f number number()
 ```
 
