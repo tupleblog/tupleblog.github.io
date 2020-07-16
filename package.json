@@ -24,6 +24,6 @@
     "grunt-svgmin": "~5.0.0",
     "gulp": "^3.9.0",
     "gulp-shell": "^0.7.0",
-    "lodash": "^4.17.13"
+    "lodash": "^4.17.19"
   }
 }
