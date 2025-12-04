@@ -127,6 +127,16 @@ Pain Point คลาสสิกของ Search Engine ส่วนใหญ่
 6. **มี HTTP Server พร้อมลุย (Developer Friendly)**
 ในมุมมองของนักพัฒนา ข้อนี้ช่วยลดงานไปได้มหาศาล เพราะ Typesense สื่อสารผ่าน HTTP/REST API ได้โดยตรง นั่นหมายความว่าเราไม่จำเป็นต้องเสียเวลาเขียน Backend Middleware มาคั่นกลางให้วุ่นวาย Frontend หรือ Application สามารถยิง Request คุยกับ Search Engine ได้เลย ทำให้เราขึ้นงานต้นแบบ (Prototype) ได้ไว ปรับแก้หน้างานได้คล่องตัว และยังช่วยกระจายความเสี่ยง (Decouple) ไม่ให้ Backend รับภาระหนักจนกลายเป็น Single Point of Failure อีกด้วย
 
+<figure><center>
+  <img width="600" src="/images/post/dip/typesense.png" data-action="zoom"/>
+
+  <figcaption>
+    <a title="Blocking in deduplication">
+      รูปที่ 4: การใช้ Typesense เพื่อให้การค้นหาทำได้เร็ว มี Facted search และไม่จำเป็นต้องจูนเยอะสำหรับภาษาไทย
+    </a>
+  </figcaption>
+</center></figure>
+
 โดยภาพรวมแล้ว การเลือก Typesense ไม่ใช่แค่การเลือกเครื่องมือค้นหาที่เก่งเทพที่สุด แต่คือการหาจุดสมดุลระหว่าง "ความคล่องตัว" ของทีมพัฒนา และมอบ "ความเร็ว" สูงสุดส่งงานให้กับผู้ใช้งาน ในทรัพยากรที่คุ้มค่าที่สุดสำหรับโปรเจกต์ที่มีข้อมูลมหาศาลระดับนี้
 
 ## สรุป
